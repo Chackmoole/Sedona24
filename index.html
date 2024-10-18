@@ -85,7 +85,7 @@
       <p class="accept__text">Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <a class="button accept__button" href="#">Поиск гостиницы в седоне</a>
+      <button class="button accept__button" type="button">Поиск гостиницы в седоне</button>
     </section>
 
     <section class="mailing">
@@ -119,5 +119,73 @@
       <img src="https://placehold.co/115x34" alt="ссылка на сайт htmlacademy.ru">
     </a>
   </footer>
+
+  <article class="modal">
+    <h2 class="title title--h2 modal__title">Поиск гостиницы в Седоне</h2>
+    <button class="button modal__button-close">
+      <span class="visually-hidden">Закрыть окно бронирования</span>
+    </button>
+
+    <form class="modal__form">
+      <ul class="modal__list">
+        <li class="modal__item">
+          <label class="modal__caption" for="check-in">Дата заезда:</label>
+          <div>
+          <input class="modal__input" type="date" name="check-in" id="check-in" min="2024-10-18">
+            <span class="modal__input-tip modal__input-tip--error visually-hidden">
+              Мы не можем отправить вас в прошлое.
+            </span>
+            <span class="modal__input-tip">
+              На эти даты есть свободные номера. Пока есть.
+            </span>
+          </div>
+        </li>
+        <li class="modal__item">
+          <label class="modal__caption" for="check-out">Дата выезда:</label>
+          <div>
+            <input class="modal__input" type="date" name="check-out" id="check-out" min="2024-10-19">
+            <span class="modal__input-tip modal__input-tip--error visually-hidden">
+              Мы не можем отправить вас в прошлое.
+            </span>
+            <span class="modal__input-tip">
+              На эти даты есть свободные номера. Пока есть.
+            </span>
+          </div>
+        </li>
+        <li class="modal__item">
+          <div>
+            <label class="modal__caption" for="adults">Взрослые:</label>
+            <button class="modal__button modal__button--adults-dec" type="button">
+              <span class="visually-hidden">Убавить взрослого</span>
+            </button>
+            <input type="number" id="adults" name="adults" min="1" value="2">
+            <button class="modal__button modal__button--adults-inc" type="button">
+              <span class="visually-hidden">Прибавить взрослого</span>
+            </button>
+          </div>
+          <div>
+            <label class="modal__caption" for="child">Дети:</label>
+            <button class="modal__tooltip-button" type="button">i</button>
+            <p class="modal__tooltip-text visually-hidden">
+              Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет.
+              Дети до&nbsp;6&nbsp;лет размещаются бесплатно.
+            </p>
+            <button class="modal__button modal__button--child-dec" type="button">
+              <span class="visually-hidden">Убавить ребенка</span>
+            </button>
+            <input type="number" id="child" name="child" min="0" value="1">
+            <button class="modal__button modal__button--child-inc" type="button">
+              <span class="visually-hidden">Прибавить ребенка</span>
+            </button>
+          </div>
+        </li>
+        <li class="modal__item">
+          <button class="button modal__button-approve" type="submit" formaction="https://echo.htmlacademy.ru/">
+            Найти
+          </button>
+        </li>
+      </ul>
+    </form>
+  </article>
   </body>
 </html>
