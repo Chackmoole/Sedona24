@@ -92,7 +92,7 @@
       <p class="">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
       <form class="mailing__form" action="https://echo.htmlacademy.ru/" method="get" name="mailing">
         <label>
-          <input class="input mailing__input" type="text" name="mailing__input" placeholder="Ваш e-mail">
+          <input class="input mailing__input" type="text" name="mailing__input" placeholder="Ваш e-mail" required>
         </label>
         <button class="button mailing__button" type="submit">Подписаться</button>
       </form>
@@ -136,7 +136,7 @@
         <li class="modal__item">
           <label class="modal__caption" for="check-in">Дата заезда:</label>
           <div>
-          <input class="modal__input" type="date" name="check-in" id="check-in" min="2024-10-18">
+          <input class="modal__input" type="date" name="check-in" id="check-in" min="2024-10-18" required>
             <span class="modal__input-tip modal__input-tip--error visually-hidden">
               Мы не можем отправить вас в прошлое.
             </span>
@@ -148,7 +148,7 @@
         <li class="modal__item">
           <label class="modal__caption" for="check-out">Дата выезда:</label>
           <div>
-            <input class="modal__input" type="date" name="check-out" id="check-out" min="2024-10-19">
+            <input class="modal__input" type="date" name="check-out" id="check-out" min="2024-10-19" required>
             <span class="modal__input-tip modal__input-tip--error visually-hidden">
               Мы не можем отправить вас в прошлое.
             </span>
@@ -163,7 +163,7 @@
             <button class="modal__button modal__button--adults-dec" type="button">
               <span class="visually-hidden">Убавить взрослого</span>
             </button>
-            <input type="number" id="adults" name="adults" min="1" value="2">
+            <input type="number" id="adults" name="adults" min="1" value="2" required>
             <button class="modal__button modal__button--adults-inc" type="button">
               <span class="visually-hidden">Прибавить взрослого</span>
             </button>
@@ -178,7 +178,7 @@
             <button class="modal__button modal__button--child-dec" type="button">
               <span class="visually-hidden">Убавить ребенка</span>
             </button>
-            <input type="number" id="child" name="child" min="0" value="1">
+            <input type="number" id="child" name="child" min="0" value="1" required>
             <button class="modal__button modal__button--child-inc" type="button">
               <span class="visually-hidden">Прибавить ребенка</span>
             </button>
