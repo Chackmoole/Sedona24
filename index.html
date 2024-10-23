@@ -2,11 +2,195 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>HTML Academy: Sedona</title>
   </head>
   <body>
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html"><img src="https://placehold.co/140x70" alt="логотип Седоны." width="140" height="70"></a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">О Седоне</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+    <ul class="user-block">
+      <li class="user-block__item">
+        <a class="user-block__search" href="#"><span class="visually-hidden">Поиск</span></a>
+      </li>
+      <li class="user-block__item">
+        <a class="user-block__favorite" href="#"><span class="visually-hidden">Избранное</span></a>
+      </li>
+      <li class="user-block__item">
+        <a class="user-block__buy-button" href="#">Хочу сюда!</a>
+      </li>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    </ul>
+  </header>
+  <main class="main-page">
+    <img src="https://placehold.co/1200x485" alt="изображение Седоны." width="1200" height="485">
+    <h1 class="title main-page__title">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
+    <p class="main-page__caption">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем Гранд-Каньон!</p>
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества каньона Седона</h2>
+    <ul class="advantages__list">
+      <li class="advantages__item">
+        <b class="advantages__title">Настоящий городок</b>
+        <span class="advantages__text">№1</span>
+        <p>Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течёт своя жизнь</p>
+      </li>
+      <li class="advantages__item advantages__item--img">
+        <img src="https://placehold.co/800x384" alt="изображение города Седона."></li>
+      <li class="advantages__item">
+        <b class="advantages__title">Жильё</b>
+        <p class="advantages__desc">Рекомендуем пожить в&nbsp;настоящем мотеле,всё как в&nbsp;кино!</p>
+      </li>
+      <li class="advantages__item">
+        <b class="advantages__title">Еда</b>
+        <p class="advantages__desc">Всегда заказывайте топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+      </li>
+      <li class="advantages__item">
+        <b class="advantages__title">Сувениры</b>
+        <p class="advantages__desc">Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
+      </li>
+      <li class="advantages__item advantages__item--img">
+        <img src="https://placehold.co/800x384" alt="изображение каньона Седона.">
+      </li>
+      <li class="advantages__item">
+        <b class="advantages__title">Там есть мост дьявола</b>
+        <span class="advantages__text">№2</span>
+        <p class="advantages__desc">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, разумеется</p>
+      </li>
+      <li class="advantages__item">
+        <b class="advantages__title">Небольшая площадь</b>
+        <span class="advantages__text">№3</span>
+        <p class="advantages__desc">Все достопримечательности находятся очень близко</p>
+      </li>
+      <li class="advantages__item">
+        <b class="advantages__title">Красивая дорога</b>
+        <span class="advantages__text">№4</span>
+        <p class="advantages__desc">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
+      </li>
+      <li class="advantages__item">
+        <b class="advantages__title">Мало туристов</b>
+        <span class="advantages__text">№5</span>
+        <p class="advantages__desc">Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
+      </li>
+    </ul>
+    </section>
 
+    <section class="accept">
+      <h2 class="title title--h2 accept__title">Заинтересовались?</h2>
+      <p class="accept__text">Укажите предполагаемые даты поездки,
+        и мы покажем вам лучшие предложения гостиниц в Седоне
+      </p>
+      <button class="button accept__button" type="button">Поиск гостиницы в седоне</button>
+    </section>
+
+    <section class="mailing mailing--main-page">
+      <h2 class="title title--h2 mailing__title">Подпишитесь на рассылку</h2>
+      <p class="">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
+      <form class="mailing__form" action="https://echo.htmlacademy.ru/" method="get" name="mailing">
+        <label>
+          <input class="input mailing__input" type="text" name="mailing__input" placeholder="Ваш e-mail" required>
+        </label>
+        <button class="button mailing__button" type="submit">Подписаться</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <ul class="socials">
+      <li class="socials__item socials__item--twitter">
+        <a class="socials__link socials__link--twitter" href="https://www.facebook.com/htmlacademy">
+          <span class="visually-hidden">twitter</span>
+        </a>
+      </li>
+      <li class="socials__item socials__item--facebook">
+        <a class="socials__link socials__link--facebook" href="https://twitter.com/htmlacademy_ru">
+          <span class="visually-hidden">facebook</span>
+        </a>
+      </li>
+      <li class="socials__item socials__item--youtube">
+        <a class="socials__link socials__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+          <span class="visually-hidden">youtube</span>
+        </a>
+      </li>
+    </ul>
+
+    <a class="main-footer__phone-link" href="tel:88128121212" >+7 (812) 812-12-12</a>
+
+    <a class="main-footer__academy-link" href="https://htmlacademy.ru">
+      <img src="https://placehold.co/115x34" alt="ссылка на сайт htmlacademy.ru.">
+    </a>
+  </footer>
+
+  <article class="modal">
+    <h2 class="title title--h2 modal__title">Поиск гостиницы в Седоне</h2>
+    <button class="button modal__button-close">
+      <span class="visually-hidden">Закрыть окно бронирования</span>
+    </button>
+
+    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get" name="hotel-search">
+      <ul class="modal__list">
+        <li class="modal__item">
+          <label class="modal__caption" for="check-in">Дата заезда:</label>
+          <div>
+          <input class="modal__input" type="date" name="check-in" id="check-in" min="2024-10-18" required>
+            <span class="modal__input-tip modal__input-tip--error visually-hidden">
+              Мы не можем отправить вас в прошлое.
+            </span>
+            <span class="modal__input-tip">
+              На эти даты есть свободные номера. Пока есть.
+            </span>
+          </div>
+        </li>
+        <li class="modal__item">
+          <label class="modal__caption" for="check-out">Дата выезда:</label>
+          <div>
+            <input class="modal__input" type="date" name="check-out" id="check-out" min="2024-10-19" required>
+            <span class="modal__input-tip modal__input-tip--error visually-hidden">
+              Мы не можем отправить вас в прошлое.
+            </span>
+            <span class="modal__input-tip">
+              На эти даты есть свободные номера. Пока есть.
+            </span>
+          </div>
+        </li>
+        <li class="modal__item">
+          <div>
+            <label class="modal__caption" for="adults">Взрослые:</label>
+            <button class="modal__button modal__button--adults-dec" type="button">
+              <span class="visually-hidden">Убавить взрослого</span>
+            </button>
+            <input type="number" id="adults" name="adults" min="1" value="2" required>
+            <button class="modal__button modal__button--adults-inc" type="button">
+              <span class="visually-hidden">Прибавить взрослого</span>
+            </button>
+          </div>
+          <div>
+            <label class="modal__caption" for="child">Дети:</label>
+            <button class="modal__tooltip-button" type="button">i</button>
+            <p class="modal__tooltip-text visually-hidden">
+              Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет.
+              Дети до&nbsp;6&nbsp;лет размещаются бесплатно.
+            </p>
+            <button class="modal__button modal__button--child-dec" type="button">
+              <span class="visually-hidden">Убавить ребенка</span>
+            </button>
+            <input type="number" id="child" name="child" min="0" value="1" required>
+            <button class="modal__button modal__button--child-inc" type="button">
+              <span class="visually-hidden">Прибавить ребенка</span>
+            </button>
+          </div>
+        </li>
+        <li class="modal__item">
+          <button class="button modal__button-approve" type="submit">
+            Найти
+          </button>
+        </li>
+      </ul>
+    </form>
+  </article>
   </body>
 </html>

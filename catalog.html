@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Sedona/catalog</title>
+</head>
+<body>
+  <header class="main-header">
+  <a class="main-header__logo" href="index.html"><img src="https://placehold.co/140x70" alt="логотип Седоны." width="140" height="70"></a>
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="#">О Седоне</a></li>
+      <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="catalog.html">Гостиницы</a></li>
+    </ul>
+  </nav>
+  <ul class="user-block">
+    <li class="user-block__item">
+      <a class="user-block__search" href="#"><span class="visually-hidden">Поиск</span></a>
+    </li>
+    <li class="user-block__item">
+      <a class="user-block__favorite" href="#"><span class="visually-hidden">Избранное</span></a>
+    </li>
+    <li class="user-block__item">
+      <a class="user-block__buy-button" href="#">Хочу сюда!</a>
+    </li>
+
+  </ul>
+</header>
+  <main class="catalog-page">
+    <section class="catalog-page__header">
+      <h1 class="title">
+        Гостиницы Седоны
+      </h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item breadcrumbs__item--home">
+          <a href="index.html"><span class="visually-hidden">На главную страницу</span></a></li>
+        <li class="breadcrumbs__item breadcrumbs__item--hotels"><a href="#"><span class="visually-hidden">На страницу каталога</span></a></li>
+      </ul>
+
+      <form class="filter" name="filters" action="https://echo.htmlacademy.ru/" method="get">
+       <h2 class="visually-hidden">Фильтры</h2>
+        <fieldset class="filter__infrastructure">
+          <legend class="title title--h3" >Инфраструктура:</legend>
+          <input class="filter__checkbox" type="checkbox" name="pool" id="pool" checked>
+          <label class="filter__caption" for="pool">Бассейн</label>
+          <input class="filter__checkbox"  type="checkbox" name="parking" id="parking" checked>
+          <label class="filter__caption" for="parking">Парковка</label>
+          <input class="filter__checkbox"  type="checkbox" name="wifi" id="wifi">
+          <label class="filter__caption" for="wifi">Wi-Fi</label>
+        </fieldset>
+
+        <fieldset class="filter__house-type">
+          <legend class="title title--h3" >Тип жилья:</legend>
+          <input class="filter__radio" type="radio" name="hotel" id="hotel" checked>
+          <label class="filter__caption" for="hotel">Гостиница</label>
+          <input class="filter__radio" type="radio" name="motel" id="motel">
+          <label class="filter__caption" for="motel">Мотель</label>
+          <input class="filter__radio" type="radio" name="apartment" id="apartment">
+          <label class="filter__caption" for="apartment">Апартаменты</label>
+        </fieldset>
+
+        <fieldset class="filter__price">
+          <legend class="title title--h3" >Стоимость, ₽:</legend>
+
+          <label for="minPrice">
+            <span class="visually-hidden">минимальная цена</span>
+            <input class="filter__price filter__min-price" type="number" name="minPrice" id="minPrice" value="0">
+          </label>
+
+          <label for="maxPrice">
+            <span class="visually-hidden">Максимальная цена</span>
+            <input class="filter__price filter__max-price" type="number" name="maxPrice" id="maxPrice" value="9000">
+          </label>
+
+        </fieldset>
+
+        <button class="button" type="submit">Применить</button>
+        <button class="button button--secondary" type="submit">Сбросить</button>
+      </form>
+    </section>
+    <section class="sorting">
+      <h2 class="title title--h2">Найдено гостиниц:<span class="hotels-count">38</span></h2>
+      <form class="sorting__form" action="https://echo.htmlacademy.ru/" name="sorting">
+        <label class="visually-hidden" for="sort">Сортировка по</label>
+          <select name="sort" id="sort">
+            <option class="sorting__option" value="minPrice">Сначала дешевые</option>
+            <option class="sorting__option" value="maxPrice">Сначала дорогие</option>
+            <option class="sorting__option" value="popular">Популярные</option>
+            <option class="sorting__option" value="minStars">Сначала меньше звезд</option>
+            <option class="sorting__option" value="maxStars">Сначала больше звезд</option>
+          </select>
+      </form>
+      <a href="#">
+        <span class="visually-hidden">Показать маленькими карточками</span>
+      </a>
+      <a href="#">
+        <span class="visually-hidden">Показать большими карточками</span>
+      </a>
+      <a href="#">
+        <span class="visually-hidden">Показать списком</span>
+      </a>
+    </section>
+    <section class="cards">
+      <ul class="cards__list">
+        <li class="card">
+          <a class="card__link" href="#">
+            <img class="card__pic" src="https://placehold.co/300x206" alt="описание товара.">
+            <h3 class="card__title">Amara Resort & Spa</h3>
+            <p class="card__desc">Гостиница</p>
+            <p class="card__price-text">От
+              <b class="card__price">4000</b>
+              ₽
+            </p>
+          </a>
+          <a class="button card__info" href="#">Подробнее</a>
+          <button class="button card__button">В избранное</button>
+          <div class="card__stars">
+            <span class="card__star card__star--color"></span>
+            <span class="card__star card__star--color"></span>
+            <span class="card__star card__star--color"></span>
+            <span class="card__star card__star--color"></span>
+            <span class="card__star"></span>
+          </div>
+          <div class="card__rating">
+            <p class="card__rating-text">Рейтинг:</p>
+            <span class="card__rating-value">8,5</span>
+          </div>
+        </li>
+        <li class="card">
+          <a class="card__link" href="#">
+            <img class="card__pic" src="https://placehold.co/300x206" alt="описание товара.">
+            <h3 class="card__title">Desert Quail Inn</h3>
+            <p class="card__desc">Гостиница</p>
+            <p class="card__price-text">От
+              <b class="card__price">3000</b>
+              ₽
+            </p>
+          </a>
+          <a class="button card__info" href="#">Подробнее</a>
+          <button class="button card__button">В избранное</button>
+          <div class="card__stars">
+            <span class="card__star card__star--color"></span>
+            <span class="card__star card__star--color"></span>
+            <span class="card__star card__star--color"></span>
+            <span class="card__star"></span>
+            <span class="card__star"></span>
+          </div>
+          <div class="card__rating">
+            <p class="card__rating-text">Рейтинг:</p>
+            <span class="card__rating-value">8,9</span>
+          </div>
+        </li>
+        <li class="card">
+          <a class="card__link" href="#">
+            <img class="card__pic" src="https://placehold.co/300x206" alt="описание товара.">
+            <h3 class="card__title">Villas at Poco Diablo</h3>
+            <p class="card__desc">Гостиница</p>
+            <p class="card__price-text">От
+              <b class="card__price">2000</b>
+              ₽
+            </p>
+          </a>
+          <a class="button card__info" href="#">Подробнее</a>
+          <button class="button card__button card__button--favourite">В избранном</button>
+          <div class="card__stars">
+            <span class="card__star card__star--color"></span>
+            <span class="card__star card__star--color"></span>
+            <span class="card__star"></span>
+            <span class="card__star"></span>
+            <span class="card__star"></span>
+          </div>
+          <div class="card__rating">
+            <p class="card__rating-text">Рейтинг:</p>
+            <span class="card__rating-value">9,2</span>
+          </div>
+        </li>
+        <li class="card">
+          <a class="card__link" href="#">
+            <img class="card__pic" src="https://placehold.co/300x206" alt="описание товара.">
+            <h3 class="card__title">GreenTree Inn</h3>
+            <p class="card__desc">Гостиница</p>
+            <p class="card__price-text">От
+              <b class="card__price">3000</b>
+              ₽
+            </p>
+          </a>
+          <a class="button card__info" href="#">Подробнее</a>
+          <button class="button card__button">В избранное</button>
+          <div class="card__stars">
+            <span class="card__star card__star--color"></span>
+            <span class="card__star card__star--color"></span>
+            <span class="card__star"></span>
+            <span class="card__star"></span>
+            <span class="card__star"></span>
+          </div>
+          <div class="card__rating">
+            <p class="card__rating-text">Рейтинг:</p>
+            <span class="card__rating-value"></span>
+          </div>
+
+        </li>
+      </ul>
+      <div class="cards__inner">
+        <button class="button cards__button">Загрузить ещё</button>
+      </div>
+      <div class="cards__container">
+        <ul class="pagination">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--disable" href="#">1</a>
+          </li>
+          <li class="pagination__item ">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item ">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item ">
+            <a class="pagination__link" href="#">4</a>
+          </li>
+          <li class="pagination__item ">
+            <a class="pagination__link pagination__link--more" href="#">...</a>
+          </li>
+          <li class="pagination__item ">
+            <a class="pagination__link" href="#">10</a>
+          </li>
+        </ul>
+        <label class="cards__text">Гостиниц на странице:</label>
+        <select class="cards__count" name="page-count" id="page-count">
+          <option class="cards__option" value="1">1</option>
+          <option class="cards__option" value="2">2</option>
+          <option class="cards__option" value="3">3</option>
+          <option class="cards__option" value="4" selected>4</option>
+          <option class="cards__option" value="5">5</option>
+          <option class="cards__option" value="6">6</option>
+          <option class="cards__option" value="7">7</option>
+          <option class="cards__option" value="8">8</option>
+          <option class="cards__option" value="9">9</option>
+          <option class="cards__option" value="10">10</option>
+        </select>
+      </div>
+    </section>
+    <section class="mailing">
+      <h2 class="title title--h2 mailing__title">Подпишитесь на рассылку</h2>
+      <p class="">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
+      <form class="mailing__form" action="https://echo.htmlacademy.ru/" method="get" name="mailing">
+        <label>
+          <input class="input mailing__input" type="text" name="mailing__input" placeholder="Ваш e-mail" required>
+        </label>
+        <button class="button mailing__button" type="submit">Подписаться</button>
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <ul class="socials">
+      <li class="socials__item socials__item--twitter">
+        <a class="socials__link socials__link--twitter" href="https://www.facebook.com/htmlacademy">
+          <span class="visually-hidden">twitter</span>
+        </a>
+      </li>
+      <li class="socials__item socials__item--facebook">
+        <a class="socials__link socials__link--facebook" href="https://twitter.com/htmlacademy_ru">
+          <span class="visually-hidden">facebook</span>
+        </a>
+      </li>
+      <li class="socials__item socials__item--youtube">
+        <a class="socials__link socials__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+          <span class="visually-hidden">youtube</span>
+        </a>
+      </li>
+    </ul>
+
+    <a class="main-footer__phone-link" href="tel:88128121212" >+7 (812) 812-12-12</a>
+
+    <a class="main-footer__academy-link" href="https://htmlacademy.ru">
+      <img src="https://placehold.co/115x34" alt="ссылка на сайт htmlacademy.ru.">
+    </a>
+  </footer>
+</body>
+</html>
