@@ -1,9 +1,11 @@
 {
-  "html.format.wrapAttributes": "force",
+  "--html.format.wrapAttributes": "force",
+  "--html-whitespace-sensitivity": "strict",
   "singleQuote": true,
   "jsxSingleQuote": true,
   "arrowParens": "always",
   "max-len": ["error", 140, 2],
   "tabWidth": 2,
-  "useTabs": false
+  "useTabs": false,
+  "--bracket-same-line": true
 }
