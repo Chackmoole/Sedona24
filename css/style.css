@@ -13,8 +13,97 @@
   src: url('../fonts/ptsans-700.woff2') format('woff2');
 }
 
+body {
+  background-color: #ffffff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.button {
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #756257;
+}
+
+.caption {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* Pages*/
+
+.main-header {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.main-nav__link {
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-page__container {
+  background-color: #68a2ca;
+  background-image: url('../img/background/index-background.jpg');
+  background-repeat: no-repeat;
+}
+
+.main-page__caption {
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.advantages__title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages__text {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages__item--color {
+  background-color: #83b3d3;
+  color: #ffffff;
+}
+
+.advantages__box--color {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages__box--dark-color {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
 .mailing--main-page {
   background-image: url('../img/background/background.png');
+}
+
+.mailing__title {
+  color: #ffffff;
+}
+
+.mailing__caption {
+  color: #ffffff;
+}
+
+.main-footer__phone-link {
+  font-size: 40px;
+  line-height: 40px;
 }
 
 .catalog-page__header {
