@@ -143,6 +143,27 @@ body {
   color: #000000;
 }
 
+.search-modal {
+  line-height: 40px;
+  color: #000000;
+}
+
+.search-modal__caption {
+  font-weight: 700;
+}
+
+.search-modal__input-tip {
+  font-size: 16px;
+}
+
+.search-modal__input-tip--error {
+  color: #ff5757;
+}
+
+.search-modal__button-approve {
+  background-color: #83b3d3;
+}
+
 .catalog-page__header {
   background-image: url('../img/background/catalog-background 1.png');
 }

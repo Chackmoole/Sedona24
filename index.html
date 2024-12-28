@@ -423,24 +423,28 @@
       </a>
     </footer>
 
-    <article class="modal">
-      <h2 class="title title--h2 modal__title">Поиск гостиницы в Седоне</h2>
-      <button class="button modal__button-close">
+    <article class="search-modal">
+      <h2 class="title title--h2 search-modal__title">
+        Поиск гостиницы в Седоне
+      </h2>
+      <button class="button search-modal__button-close">
         <span class="visually-hidden">Закрыть окно бронирования</span>
       </button>
 
       <form
-        class="modal__form"
+        class="search-modal__form"
         action="https://echo.htmlacademy.ru/"
         method="get"
         name="hotel-search"
       >
-        <ul class="modal__list">
-          <li class="modal__item">
-            <label class="modal__caption" for="check-in">Дата заезда:</label>
+        <ul class="search-modal__list">
+          <li class="search-modal__item">
+            <label class="search-modal__caption" for="check-in"
+              >Дата заезда:</label
+            >
             <div>
               <input
-                class="modal__input"
+                class="search-modal__input"
                 type="date"
                 name="check-in"
                 id="check-in"
@@ -448,20 +452,22 @@
                 required
               />
               <span
-                class="modal__input-tip modal__input-tip--error visually-hidden"
+                class="search-modal__input-tip search-modal__input-tip--error"
               >
                 Мы не можем отправить вас в прошлое.
               </span>
-              <span class="modal__input-tip">
+              <span class="search-modal__input-tip">
                 На эти даты есть свободные номера. Пока есть.
               </span>
             </div>
           </li>
-          <li class="modal__item">
-            <label class="modal__caption" for="check-out">Дата выезда:</label>
+          <li class="search-modal__item">
+            <label class="search-modal__caption" for="check-out"
+              >Дата выезда:</label
+            >
             <div>
               <input
-                class="modal__input"
+                class="search-modal__input"
                 type="date"
                 name="check-out"
                 id="check-out"
@@ -469,20 +475,22 @@
                 required
               />
               <span
-                class="modal__input-tip modal__input-tip--error visually-hidden"
+                class="search-modal__input-tip search-modal__input-tip--error visually-hidden"
               >
                 Мы не можем отправить вас в прошлое.
               </span>
-              <span class="modal__input-tip">
+              <span class="search-modal__input-tip">
                 На эти даты есть свободные номера. Пока есть.
               </span>
             </div>
           </li>
-          <li class="modal__item">
+          <li class="search-modal__item">
             <div>
-              <label class="modal__caption" for="adults">Взрослые:</label>
+              <label class="search-modal__caption" for="adults"
+                >Взрослые:</label
+              >
               <button
-                class="modal__button modal__button--adults-dec"
+                class="search-modal__button search-modal__button--adults-dec"
                 type="button"
               >
                 <span class="visually-hidden">Убавить взрослого</span>
@@ -496,22 +504,24 @@
                 required
               />
               <button
-                class="modal__button modal__button--adults-inc"
+                class="search-modal__button search-modal__button--adults-inc"
                 type="button"
               >
                 <span class="visually-hidden">Прибавить взрослого</span>
               </button>
             </div>
             <div>
-              <label class="modal__caption" for="child">Дети:</label>
-              <button class="modal__tooltip-button" type="button">i</button>
-              <p class="modal__tooltip-text visually-hidden">
+              <label class="search-modal__caption" for="child">Дети:</label>
+              <button class="search-modal__tooltip-button" type="button">
+                i
+              </button>
+              <p class="search-modal__tooltip-text visually-hidden">
                 Укажите количество детей, которые будут с&nbsp;вами, возраст
                 которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети
                 до&nbsp;6&nbsp;лет размещаются бесплатно.
               </p>
               <button
-                class="modal__button modal__button--child-dec"
+                class="search-modal__button search-modal__button--child-dec"
                 type="button"
               >
                 <span class="visually-hidden">Убавить ребенка</span>
@@ -525,15 +535,15 @@
                 required
               />
               <button
-                class="modal__button modal__button--child-inc"
+                class="search-modal__button search-modal__button--child-inc"
                 type="button"
               >
                 <span class="visually-hidden">Прибавить ребенка</span>
               </button>
             </div>
           </li>
-          <li class="modal__item">
-            <button class="button modal__button-approve" type="submit">
+          <li class="search-modal__item">
+            <button class="button search-modal__button-approve" type="submit">
               Найти
             </button>
           </li>
