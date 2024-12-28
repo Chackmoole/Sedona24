@@ -17,14 +17,27 @@
 body {
   background-color: #ffffff;
   font-family: 'PT Sans', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 21px;
   color: #333333;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button {
-  font-family: 'PT Sans', sans-serif;
+  font-family: inherit;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -33,15 +46,11 @@ body {
 }
 
 .caption {
-  font-family: 'PT Sans', sans-serif;
   font-size: 22px;
-  font-weight: 400;
   line-height: 26px;
-  color: #333333;
 }
 
 .title {
-  font-family: 'PT Sans', sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -53,13 +62,18 @@ body {
 
 .main-header {
   background-color: #ffffff;
-  color: #333333;
 }
 
 .main-nav__link {
+  font-size: 20px;
+  line-height: 26px;
   font-weight: 700;
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
+}
+
+.user-block__buy-button {
+  text-decoration: none;
 }
 
 .main-page__container {
@@ -73,7 +87,6 @@ body {
 }
 
 .advantages__title {
-  font-family: 'PT Sans', sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -82,7 +95,7 @@ body {
 }
 
 .advantages__title--color {
-  color: #ffffff;
+  color: inherit;
 }
 
 .advantages__text {
@@ -94,7 +107,7 @@ body {
 }
 
 .advantages__text--color {
-  color: #ffffff;
+  color: inherit;
 }
 
 .advantages__item--color {
