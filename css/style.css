@@ -52,13 +52,9 @@ body {
 
 .button--reset {
   font-size: 18px;
+  font-weight: 400;
   text-transform: none;
   background-color: transparent;
-}
-
-.caption {
-  font-size: 22px;
-  line-height: 26px;
 }
 
 .title {
@@ -67,6 +63,14 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.title--h3 {
+  font-size: 20px;
+}
+.caption {
+  font-size: 22px;
+  line-height: 26px;
 }
 
 /* Pages*/
@@ -197,4 +201,41 @@ body {
 
 .filter__accept-button {
   font-size: 16px;
+}
+
+.card__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.card__title {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.card__text {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.card__info {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.card__button {
+  font-size: 16px;
+}
+
+.card__button--favourite {
+  background-color: #7db54f;
+}
+
+.card__rating {
+  font-size: 16px;
+  color: #333333;
+}
+
+.pagination__link {
+  text-decoration: none;
 }

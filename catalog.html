@@ -327,15 +327,17 @@
                 alt="описание товара."
               />
               <h3 class="card__title">Amara Resort & Spa</h3>
-              <p class="card__desc">Гостиница</p>
-              <p class="card__price-text">
+              <p class="card__text card__desc">Гостиница</p>
+              <p class="card__text card__price">
                 От
-                <b class="card__price">4000</b>
+                <span class="card_cost">4000</span>
                 ₽
               </p>
             </a>
             <a class="button card__info" href="#">Подробнее</a>
-            <button class="button card__button">В избранное</button>
+            <button class="button button--secondary card__button">
+              В избранное
+            </button>
             <div class="card__stars">
               <span class="card__star card__star--color">
                 <svg
@@ -413,10 +415,10 @@
                 alt="описание товара."
               />
               <h3 class="card__title">Desert Quail Inn</h3>
-              <p class="card__desc">Гостиница</p>
-              <p class="card__price-text">
+              <p class="card__text card__desc">Гостиница</p>
+              <p class="card__text card__price">
                 От
-                <b class="card__price">3000</b>
+                <span class="card_cost">3000</span>
                 ₽
               </p>
             </a>
@@ -497,10 +499,10 @@
                 alt="описание товара."
               />
               <h3 class="card__title">Villas at Poco Diablo</h3>
-              <p class="card__desc">Гостиница</p>
-              <p class="card__price-text">
+              <p class="card__text card__desc">Гостиница</p>
+              <p class="card__text card__price">
                 От
-                <b class="card__price">2000</b>
+                <span class="card_cost">2000</span>
                 ₽
               </p>
             </a>
@@ -583,10 +585,10 @@
                 alt="описание товара."
               />
               <h3 class="card__title">GreenTree Inn</h3>
-              <p class="card__desc">Гостиница</p>
-              <p class="card__price-text">
+              <p class="card__text card__desc">Гостиница</p>
+              <p class="card__text card__price">
                 От
-                <b class="card__price">3000</b>
+                <span class="card_cost">3000</span>
                 ₽
               </p>
             </a>
@@ -661,31 +663,45 @@
           </li>
         </ul>
         <div class="cards__inner">
-          <button class="button cards__button">Загрузить ещё</button>
+          <button class="button button--secondary cards__button">
+            Загрузить ещё
+          </button>
         </div>
         <div class="cards__container">
           <ul class="pagination">
             <li class="pagination__item">
-              <a class="pagination__link pagination__link--disable" href="#"
+              <a
+                class="button button--secondary pagination__link pagination__link--disable"
+                href="#"
                 >1</a
               >
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
+              <a class="button button--secondary pagination__link" href="#"
+                >2</a
+              >
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#">3</a>
+              <a class="button button--secondary pagination__link" href="#"
+                >3</a
+              >
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#">4</a>
+              <a class="button button--secondary pagination__link" href="#"
+                >4</a
+              >
             </li>
             <li class="pagination__item">
-              <a class="pagination__link pagination__link--more" href="#"
+              <a
+                class="button button--secondary pagination__link pagination__link--more"
+                href="#"
                 >...</a
               >
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#">10</a>
+              <a class="button button--secondary pagination__link" href="#"
+                >10</a
+              >
             </li>
           </ul>
           <label class="cards__text" for="page-count">
@@ -726,7 +742,10 @@
               required
             />
           </label>
-          <button class="button mailing__button" type="submit">
+          <button
+            class="button button--secondary mailing__button"
+            type="submit"
+          >
             Подписаться
           </button>
         </form>
