@@ -42,7 +42,18 @@ body {
   font-weight: 700;
   line-height: 36px;
   color: #ffffff;
+  text-transform: uppercase;
   background-color: #756257;
+}
+
+.button--secondary {
+  background-color: #83b3d3;
+}
+
+.button--reset {
+  font-size: 18px;
+  text-transform: none;
+  background-color: transparent;
 }
 
 .caption {
@@ -143,6 +154,8 @@ body {
   color: #000000;
 }
 
+/*Модальное окно поиска*/
+
 .search-modal {
   line-height: 40px;
   color: #000000;
@@ -160,10 +173,28 @@ body {
   color: #ff5757;
 }
 
-.search-modal__button-approve {
-  background-color: #83b3d3;
-}
-
 .catalog-page__header {
   background-image: url('../img/background/catalog-background 1.png');
+}
+
+.catalog-page {
+  color: #ffffff;
+}
+
+.catalog-page--title {
+  font-size: 60px;
+  color: inherit;
+}
+
+.breadcrumbs__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.filter__title {
+  color: inherit;
+}
+
+.filter__accept-button {
+  font-size: 16px;
 }

@@ -103,10 +103,10 @@
     </header>
     <main class="catalog-page">
       <section class="catalog-page__header">
-        <h1 class="title">Гостиницы Седоны</h1>
+        <h1 class="title catalog-page--title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item breadcrumbs__item--home">
-            <a href="index.html">
+            <a class="breadcrumbs__link" href="index.html">
               <span class="visually-hidden">На главную страницу</span>
               <svg
                 width="12"
@@ -129,9 +129,7 @@
             </a>
           </li>
           <li class="breadcrumbs__item breadcrumbs__item--hotels">
-            <a href="#">
-              <span class="visually-hidden">На страницу каталога</span>
-            </a>
+            <a class="breadcrumbs__link" href="#"> Гостиницы </a>
           </li>
         </ul>
 
@@ -143,7 +141,9 @@
         >
           <h2 class="visually-hidden">Фильтры</h2>
           <fieldset class="filter__infrastructure">
-            <legend class="title title--h3">Инфраструктура:</legend>
+            <legend class="title title--h3 filter__title">
+              Инфраструктура:
+            </legend>
             <input
               class="filter__checkbox"
               type="checkbox"
@@ -170,7 +170,7 @@
           </fieldset>
 
           <fieldset class="filter__house-type">
-            <legend class="title title--h3">Тип жилья:</legend>
+            <legend class="title title--h3 filter__title">Тип жилья:</legend>
             <input
               class="filter__radio"
               type="radio"
@@ -191,7 +191,7 @@
           </fieldset>
 
           <fieldset class="filter__price">
-            <legend class="title title--h3">Стоимость, ₽:</legend>
+            <legend class="title title--h3 filter__title">Стоимость, ₽:</legend>
 
             <label for="minPrice">
               <span class="visually-hidden">минимальная цена</span>
@@ -216,8 +216,16 @@
             </label>
           </fieldset>
 
-          <button class="button" type="submit">Применить</button>
-          <button class="button button--secondary" type="submit">
+          <button
+            class="button button--secondary filter__accept-button"
+            type="submit"
+          >
+            Применить
+          </button>
+          <button
+            class="button button--reset filter__reset-button"
+            type="submit"
+          >
             Сбросить
           </button>
         </form>
@@ -672,7 +680,9 @@
               <a class="pagination__link" href="#">10</a>
             </li>
           </ul>
-          <label class="cards__text">Гостиниц на странице:</label>
+          <label class="cards__text" for="page-count">
+            Гостиниц на странице:
+          </label>
           <select class="cards__count" name="page-count" id="page-count">
             <option class="cards__option" value="1">1</option>
             <option class="cards__option" value="2">2</option>
