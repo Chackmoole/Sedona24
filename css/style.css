@@ -209,7 +209,8 @@
   line-height: 23px;
 }
 
-.card__caption {
+.card__button {
+  font-size: 16px;
 }
 
 .card__info {
