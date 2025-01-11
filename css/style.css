@@ -154,14 +154,34 @@ img {
   text-decoration: none;
 }
 
-.main-container {
+.stretch-box {
   flex-grow: 1;
+}
+
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .main-page__container {
   background-color: #68a2ca;
   background-image: url('../img/background/index-background.jpg');
   background-repeat: no-repeat;
+}
+
+.main-page__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-page__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  min-height: 282px;
+  background-color: #ffffff;
 }
 
 .main-page__caption {
