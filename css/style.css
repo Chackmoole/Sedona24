@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -25,6 +29,39 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+svg,
+img {
+  display: block;
 }
 
 .button {
@@ -50,15 +87,6 @@
 }
 
 .text {
-  background-color: #ffffff;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  color: #333333;
-}
-
-.text--small {
   font-size: 16px;
   line-height: 21px;
 }
@@ -86,6 +114,26 @@
   background-color: #ffffff;
 }
 
+.main-header__container {
+  display: flex;
+  width: 1060px;
+  min-height: 70px;
+  margin: 0 auto;
+}
+
+.main-header__logo {
+  margin-right: 30px;
+}
+
+.main-nav {
+}
+
+.main-nav__list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
 .main-nav__link {
   font-size: 20px;
   line-height: 26px;
@@ -94,14 +142,46 @@
   text-decoration: none;
 }
 
+.user-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 308px;
+  margin-left: auto;
+}
+
 .user-block__buy-button {
   text-decoration: none;
+}
+
+.stretch-box {
+  flex-grow: 1;
+}
+
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .main-page__container {
   background-color: #68a2ca;
   background-image: url('../img/background/index-background.jpg');
   background-repeat: no-repeat;
+}
+
+.main-page__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-page__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  min-height: 282px;
+  background-color: #ffffff;
 }
 
 .main-page__caption {
