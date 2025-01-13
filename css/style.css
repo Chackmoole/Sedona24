@@ -188,12 +188,38 @@ img {
   line-height: 36px;
 }
 
+.advantages__list {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+}
+
 .advantages__title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+}
+
+.advantages__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  min-height: 384px;
 }
 
 .advantages__title--colored {
