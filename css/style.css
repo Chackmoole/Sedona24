@@ -154,7 +154,7 @@ img {
   text-decoration: none;
 }
 
-.stretch-box {
+.vertical-stretch-box {
   flex-grow: 1;
 }
 
@@ -243,6 +243,21 @@ img {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.accept {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 417px;
+  background-color: #ffffff;
+}
+
+.mailing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 411px;
+}
+
 .mailing--main-page {
   background-image: url('../img/background/background.png');
 }
@@ -253,6 +268,21 @@ img {
 
 .mailing__caption {
   color: #ffffff;
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 120px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 107px;
 }
 
 .main-footer__phone-link {
@@ -276,6 +306,8 @@ img {
 .search-modal__input-error {
   color: #ff5757;
 }
+
+/*Страница каталога*/
 
 .catalog-page__header {
   background-image: url('../img/background/catalog-background 1.png');
