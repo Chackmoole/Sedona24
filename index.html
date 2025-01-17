@@ -445,13 +445,14 @@
     </footer>
 
     <article class="search-modal">
-      <h2 class="title title--h2 search-modal__title">
-        Поиск гостиницы в Седоне
-      </h2>
-      <button class="button search-modal__button-close">
-        <span class="visually-hidden">Закрыть окно бронирования</span>
-      </button>
-
+      <div class="search-modal__box">
+        <h2 class="title title--h2 search-modal__title">
+          Поиск гостиницы в Седоне
+        </h2>
+        <button class="button search-modal__button-close">
+          <span class="visually-hidden">Закрыть окно бронирования</span>
+        </button>
+      </div>
       <form
         class="search-modal__form"
         action="https://echo.htmlacademy.ru/"
@@ -463,7 +464,7 @@
             <label class="search-modal__caption" for="check-in"
               >Дата заезда:</label
             >
-            <div>
+            <div class="search-modal__inner">
               <input
                 class="search-modal__input"
                 type="date"
@@ -484,7 +485,7 @@
             <label class="search-modal__caption" for="check-out"
               >Дата выезда:</label
             >
-            <div>
+            <div class="search-modal__inner">
               <input
                 class="search-modal__input"
                 type="date"
@@ -501,8 +502,9 @@
               </span>
             </div>
           </li>
+
           <li class="search-modal__item">
-            <div>
+            <div class="">
               <label class="search-modal__caption" for="adults"
                 >Взрослые:</label
               >
@@ -527,6 +529,7 @@
                 <span class="visually-hidden">Прибавить взрослого</span>
               </button>
             </div>
+
             <div>
               <label class="search-modal__caption" for="child">Дети:</label>
               <button class="search-modal__tooltip-button" type="button">
