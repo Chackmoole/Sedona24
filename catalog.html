@@ -138,7 +138,6 @@
               <a class="breadcrumbs__link" href="#"> Гостиницы </a>
             </li>
           </ul>
-
           <form
             class="filter"
             name="filters"
@@ -146,7 +145,7 @@
             method="get"
           >
             <h2 class="visually-hidden">Фильтры</h2>
-            <fieldset class="filter__infrastructure">
+            <fieldset class="filter__inner filter__infrastructure">
               <legend class="title title--h3 filter__title">
                 Инфраструктура:
               </legend>
@@ -175,7 +174,7 @@
               <label class="filter__caption" for="wifi">Wi-Fi</label>
             </fieldset>
 
-            <fieldset class="filter__house-type">
+            <fieldset class="filter__inner filter__house-type">
               <legend class="title title--h3 filter__title">Тип жилья:</legend>
               <input
                 class="filter__radio"
@@ -231,18 +230,23 @@
                 />
               </label>
             </fieldset>
-
-            <button class="button button--secondary card__button" type="submit">
-              Применить
-            </button>
-            <button
-              class="button button--reset filter__reset-button"
-              type="submit"
-            >
-              Сбросить
-            </button>
+            <div class="filter__inner">
+              <button
+                class="button button--secondary card__button"
+                type="submit"
+              >
+                Применить
+              </button>
+              <button
+                class="button button--reset filter__reset-button"
+                type="submit"
+              >
+                Сбросить
+              </button>
+            </div>
           </form>
         </section>
+
         <section class="sorting">
           <h2 class="title title--h2">
             Найдено гостиниц:<span class="hotels-count">38</span>
