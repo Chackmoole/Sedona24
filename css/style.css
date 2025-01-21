@@ -414,6 +414,15 @@ fieldset {
   flex-wrap: wrap;
 }
 
+.cards__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.cards__button {
+  width: 620px;
+}
+
 .card__link {
   text-decoration: none;
   color: #000000;
@@ -481,6 +490,24 @@ fieldset {
   min-height: 37px;
   color: #333333;
   background: #f2f2f2;
+}
+
+.cards__pagination-box {
+  display: flex;
+  align-items: center;
+}
+.cards__text {
+  color: #333333;
+}
+
+.cards__count {
+  margin-left: 48px;
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+  margin-right: auto;
 }
 
 .pagination__link {
