@@ -412,6 +412,10 @@ fieldset {
   color: #000000;
 }
 
+.card__pic {
+  margin-bottom: 16px;
+}
+
 .card__title {
   font-size: 24px;
   line-height: 31px;
@@ -420,9 +424,24 @@ fieldset {
 .card__text {
   font-size: 18px;
   line-height: 23px;
+  width: 100%;
+}
+
+.card__inner {
+  display: flex;
+  gap: 24px;
+  width: 300px;
+}
+
+.card__button-box {
+  display: flex;
+  gap: 24px;
+  width: 300px;
 }
 
 .card__button {
+  width: 100%;
+  min-height: 40px;
   font-size: 16px;
 }
 
@@ -434,8 +453,27 @@ fieldset {
   background-color: #7db54f;
 }
 
+.card__rating-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+.card__stars {
+  display: flex;
+  gap: 7px;
+}
+
 .card__rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 160px;
+  min-height: 37px;
   color: #333333;
+  background: #f2f2f2;
 }
 
 .pagination__link {
