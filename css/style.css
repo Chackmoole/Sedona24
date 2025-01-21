@@ -268,8 +268,16 @@ fieldset {
   background-image: url('../img/background/background.png');
 }
 
+.mailing--catalog {
+  color: #333333;
+}
+
 .mailing__title {
   color: #ffffff;
+}
+
+.mailing__title--catalog {
+  color: #000000;
 }
 
 .mailing__caption {
