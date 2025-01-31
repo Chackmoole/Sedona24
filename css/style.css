@@ -134,12 +134,19 @@ fieldset {
 }
 
 .main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .main-nav__list {
   display: flex;
   list-style-type: none;
   align-items: center;
+  padding: 17px 20px;
+}
+
+.main-nav__item:not(:last-child) {
+  margin-right: 34px;
 }
 
 .main-nav__link {
