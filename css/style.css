@@ -140,9 +140,15 @@ fieldset {
 
 .main-nav__list {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 4px;
   list-style-type: none;
   align-items: center;
   padding: 17px 20px;
+}
+
+.main-nav__item {
+  display: block;
 }
 
 .main-nav__item:not(:last-child) {
@@ -161,8 +167,20 @@ fieldset {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 4px;
   min-width: 308px;
   margin-left: auto;
+}
+
+.user-block__item {
+  display: flex;
+  justify-content: center;
+  min-width: 42px;
+}
+
+.user-block__item:last-child {
+  margin-left: 20px;
 }
 
 .user-block__buy-button {
