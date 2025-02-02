@@ -225,6 +225,12 @@ fieldset {
   padding-bottom: 80px;
 }
 
+.main-page__title {
+  width: 720px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
 .main-page__caption {
   line-height: 36px;
 }
