@@ -240,35 +240,53 @@ fieldset {
   align-items: center;
 }
 
+.advantages__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  min-height: 384px;
+  padding: 96px 16px 16px;
+}
+
+.advantages__box--img {
+  padding-top: 0;
+}
+.advantages__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 160px;
+  margin-bottom: 24px;
+}
+
+.advantages__inner ~ .advantages__title {
+  margin-bottom: 20px;
+}
+
 .advantages__title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
-}
-
-.advantages__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.advantages__box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  min-height: 384px;
+  margin-bottom: 30px;
+  width: 172px;
+  text-align: center;
 }
 
 .advantages__title--colored {
   color: inherit;
 }
 
+.advantages__desc {
+  width: 250px;
+  text-align: center;
+}
+
 .advantages__text {
   color: inherit;
+  margin-bottom: 30px;
 }
 
 .advantages__item--colored {

@@ -142,12 +142,12 @@
         <h2 class="visually-hidden">Преимущества каньона Седона</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--colored">
-            <div class="advantages__inner">
+            <div class="advantages__box">
               <b class="advantages__title advantages__title--colored"
                 >Настоящий городок</b
               >
               <span class="advantages__text">№1</span>
-              <p>
+              <p class="advantages__desc">
                 Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течёт
                 своя жизнь
               </p>
@@ -160,28 +160,33 @@
             />
           </li>
           <li class="advantages__item">
-            <div class="advantages__box advantages__box--colored">
-              <svg
-                width="75"
-                height="72"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#a)" fill="#81B3D2">
-                  <path d="M30 65h16V41H30v24Zm3-21h10v18H33V44Z" />
-                  <path
-                    d="m73 39 2-2-10-10V0H51v14L38 0 0 37l2 2 8-7v37H6v3h64v-3h-5V32l8 7ZM62 69H13V29L38 4l24 25v40Zm0-45-8-7V3h8v21Z"
-                  />
-                  <path
-                    d="M30 27c0 4 3 8 8 8 4 0 7-4 7-8s-3-8-7-8c-5 0-8 4-8 8Zm8-5c2 0 5 2 5 5s-3 5-5 5c-3 0-5-2-5-5s2-5 5-5ZM20 41h-3v4h3v-4ZM26 41h-3v4h3v-4ZM20 47h-3v4h3v-4ZM26 47h-3v4h3v-4ZM52 41h-3v4h3v-4ZM58 41h-3v4h3v-4ZM52 47h-3v4h3v-4ZM58 47h-3v4h3v-4Z"
-                  />
-                </g>
-                <defs>
-                  <clipPath>
-                    <path fill="#fff" d="M0 0h75v72H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
+            <div
+              class="advantages__box advantages__box--img advantages__box--colored"
+            >
+              <div class="advantages__inner">
+                <svg
+                  width="75"
+                  height="72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#a)" fill="#81B3D2">
+                    <path d="M30 65h16V41H30v24Zm3-21h10v18H33V44Z" />
+                    <path
+                      d="m73 39 2-2-10-10V0H51v14L38 0 0 37l2 2 8-7v37H6v3h64v-3h-5V32l8 7ZM62 69H13V29L38 4l24 25v40Zm0-45-8-7V3h8v21Z"
+                    />
+                    <path
+                      d="M30 27c0 4 3 8 8 8 4 0 7-4 7-8s-3-8-7-8c-5 0-8 4-8 8Zm8-5c2 0 5 2 5 5s-3 5-5 5c-3 0-5-2-5-5s2-5 5-5ZM20 41h-3v4h3v-4ZM26 41h-3v4h3v-4ZM20 47h-3v4h3v-4ZM26 47h-3v4h3v-4ZM52 41h-3v4h3v-4ZM58 41h-3v4h3v-4ZM52 47h-3v4h3v-4ZM58 47h-3v4h3v-4Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath>
+                      <path fill="#fff" d="M0 0h75v72H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+
               <b class="advantages__title">Жильё</b>
               <p class="advantages__desc">
                 Рекомендуем пожить в&nbsp;настоящем мотеле,всё как в&nbsp;кино!
@@ -189,27 +194,29 @@
             </div>
           </li>
           <li class="advantages__item">
-            <div class="advantages__box">
-              <svg
-                width="74"
-                height="70"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#a)" fill="#81B3D2">
-                  <path
-                    d="M70 47H4c-2 0-4 2-4 4v4c0 2 2 4 4 4h1v1c0 5 4 10 10 10h44c6 0 10-4 10-10v-1h1c2 0 4-2 4-4v-4c0-2-2-4-4-4Zm-4 13c0 4-3 7-7 7H15c-4 0-7-3-7-7v-1h58v1Zm5-5-1 1H4l-1-1v-4l1-1h66l1 1v4ZM16 38l5 5 5-5 6 5 5-5 5 5 6-5 5 5 5-5 6 5 6-5-2-3-4 4-6-4-5 4-5-4-6 4-5-4-5 4-6-4-5 4-5-4-6 4-4-4-2 3 6 5 6-5ZM8 32h61v-4C68 13 54 0 37 0S6 13 5 29v3h3ZM37 3c16 0 28 11 29 26H8C9 14 21 3 37 3Z"
-                  />
-                  <path
-                    d="m37 17 2-2-2-2-2 2 2 2ZM29 12l2-2-2-2-2 2 2 2ZM45 12l2-2-2-2-2 2 2 2Z"
-                  />
-                </g>
-                <defs>
-                  <clipPath>
-                    <path fill="#fff" d="M0 0h74v70H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
+            <div class="advantages__box advantages__box--img">
+              <div class="advantages__inner">
+                <svg
+                  width="74"
+                  height="70"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#a)" fill="#81B3D2">
+                    <path
+                      d="M70 47H4c-2 0-4 2-4 4v4c0 2 2 4 4 4h1v1c0 5 4 10 10 10h44c6 0 10-4 10-10v-1h1c2 0 4-2 4-4v-4c0-2-2-4-4-4Zm-4 13c0 4-3 7-7 7H15c-4 0-7-3-7-7v-1h58v1Zm5-5-1 1H4l-1-1v-4l1-1h66l1 1v4ZM16 38l5 5 5-5 6 5 5-5 5 5 6-5 5 5 5-5 6 5 6-5-2-3-4 4-6-4-5 4-5-4-6 4-5-4-5 4-6-4-5 4-5-4-6 4-4-4-2 3 6 5 6-5ZM8 32h61v-4C68 13 54 0 37 0S6 13 5 29v3h3ZM37 3c16 0 28 11 29 26H8C9 14 21 3 37 3Z"
+                    />
+                    <path
+                      d="m37 17 2-2-2-2-2 2 2 2ZM29 12l2-2-2-2-2 2 2 2ZM45 12l2-2-2-2-2 2 2 2Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath>
+                      <path fill="#fff" d="M0 0h74v70H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
               <b class="advantages__title">Еда</b>
               <p class="advantages__desc">
                 Всегда заказывайте топовый фирменный бургер,
@@ -218,25 +225,29 @@
             </div>
           </li>
           <li class="advantages__item">
-            <div class="advantages__box advantages__box--colored">
-              <svg
-                width="64"
-                height="76"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#a)">
-                  <path
-                    d="M61 23H36c14-7 15-12 15-14-1-4-6-7-10-6-6 2-7 11-9 17-2-6-4-14-8-18l-6-2c-4 0-10 5-7 11 2 6 9 9 14 12H3c-2 0-3 1-3 3v11c0 1 1 3 3 3v36h58V40c2 0 3-2 3-3V25c0-1-1-2-3-2ZM42 6c3 0 5 1 6 3 0 3-4 5-5 7l-8 4c1-4 3-13 7-14ZM20 16c-3-2-7-4-7-8s6-7 9-4c4 4 6 11 7 17l-9-5Zm6 57H6V40h20v33Zm0-36H3V26h23v11Zm10 0v36h-7V26h7v11Zm22 36H39V40h19v33Zm3-36H39V26h22v11Z"
-                    fill="#81B3D2"
-                  />
-                </g>
-                <defs>
-                  <clipPath>
-                    <path fill="#fff" d="M0 0h64v76H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
+            <div
+              class="advantages__box advantages__box--img advantages__box--colored"
+            >
+              <div class="advantages__inner">
+                <svg
+                  width="64"
+                  height="76"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#a)">
+                    <path
+                      d="M61 23H36c14-7 15-12 15-14-1-4-6-7-10-6-6 2-7 11-9 17-2-6-4-14-8-18l-6-2c-4 0-10 5-7 11 2 6 9 9 14 12H3c-2 0-3 1-3 3v11c0 1 1 3 3 3v36h58V40c2 0 3-2 3-3V25c0-1-1-2-3-2ZM42 6c3 0 5 1 6 3 0 3-4 5-5 7l-8 4c1-4 3-13 7-14ZM20 16c-3-2-7-4-7-8s6-7 9-4c4 4 6 11 7 17l-9-5Zm6 57H6V40h20v33Zm0-36H3V26h23v11Zm10 0v36h-7V26h7v11Zm22 36H39V40h19v33Zm3-36H39V26h22v11Z"
+                      fill="#81B3D2"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath>
+                      <path fill="#fff" d="M0 0h64v76H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
               <b class="advantages__title">Сувениры</b>
               <p class="advantages__desc">
                 Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного
@@ -249,7 +260,7 @@
               src="img/content/photo-2.jpg"
               alt="изображение каньона Седона."
             />
-            <div class="advantages__inner">
+            <div class="advantages__box">
               <b class="advantages__title advantages__title--colored"
                 >Там есть мост дьявола</b
               >
@@ -263,7 +274,7 @@
           <li class="advantages__item">
             <div class="advantages__box advantages__box--colored">
               <b class="advantages__title">Небольшая площадь</b>
-              <span>№3</span>
+              <span class="advantages__text">№3</span>
               <p class="advantages__desc">
                 Все достопримечательности находятся очень близко
               </p>
@@ -272,7 +283,7 @@
           <li class="advantages__item">
             <div class="advantages__box advantages__box--dark-colored">
               <b class="advantages__title">Красивая дорога</b>
-              <span>№4</span>
+              <span class="advantages__text">№4</span>
               <p class="advantages__desc">
                 Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!
               </p>
@@ -281,7 +292,7 @@
           <li class="advantages__item">
             <div class="advantages__box advantages__box--colored">
               <b class="advantages__title">Мало туристов</b>
-              <span>№5</span>
+              <span class="advantages__text">№5</span>
               <p class="advantages__desc">
                 Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там
               </p>
