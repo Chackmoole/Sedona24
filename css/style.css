@@ -312,8 +312,20 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 417px;
+  padding: 92px 16px;
   background-color: #ffffff;
+}
+
+.accept__title {
+  width: 720px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.accept__caption {
+  width: 720px;
+  margin-bottom: 56px;
+  text-align: center;
 }
 
 .mailing {
