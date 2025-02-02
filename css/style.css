@@ -188,12 +188,12 @@ fieldset {
 }
 
 .vertical-stretch-box {
-  flex-grow: 1;
 }
 
 .page-wrapper {
   width: 1200px;
   margin: 0 auto;
+  flex-grow: 1;
 }
 
 .main-page__container {
