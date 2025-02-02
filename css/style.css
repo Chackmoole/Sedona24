@@ -197,6 +197,7 @@ fieldset {
 }
 
 .main-page__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -205,6 +206,15 @@ fieldset {
   background-color: #68a2ca;
   background-image: url('../img/background/index-background.jpg');
   background-repeat: no-repeat;
+}
+
+.main-page__container::after {
+  position: absolute;
+  content: url('../img/svg/divider.svg');
+  width: 1200px;
+  height: 57px;
+  bottom: 0;
+  left: 0;
 }
 
 .main-page__inner {
