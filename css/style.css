@@ -357,10 +357,10 @@ fieldset {
 .main-footer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   min-height: 120px;
   width: 1200px;
   margin: 0 auto;
+  padding: 40px 72px;
 }
 
 .socials {
@@ -369,12 +369,23 @@ fieldset {
   width: 107px;
 }
 
+.main-footer__socials {
+  margin-right: 60px;
+}
+
 .main-footer__phone-link {
+  width: 720px;
   font-family: 'PT Sans', sans-serif;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
   color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.main-footer__academy-link {
+  margin-left: auto;
 }
 
 /*Модальное окно поиска*/
