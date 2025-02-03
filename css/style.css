@@ -329,7 +329,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 411px;
+  padding: 94px 16px;
 }
 
 .mailing--main-page {
@@ -341,6 +341,7 @@ fieldset {
 }
 
 .mailing__title {
+  margin-bottom: 28px;
   color: #ffffff;
 }
 
@@ -349,6 +350,7 @@ fieldset {
 }
 
 .mailing__caption {
+  margin-bottom: 48px;
   color: #ffffff;
 }
 
