@@ -461,10 +461,10 @@
         name="hotel-search"
       >
         <ul class="search-modal__list">
-          <li class="search-modal__item">
-            <label class="search-modal__caption" for="check-in"
-              >Дата заезда:</label
-            >
+          <li class="search-modal__item search-modal__item--arrival">
+            <label class="search-modal__caption" for="check-in">
+              Дата заезда:
+            </label>
             <div class="search-modal__inner">
               <input
                 class="search-modal__input"
@@ -477,12 +477,13 @@
               <span class="text search-modal__input-error">
                 Мы не можем отправить вас в прошлое.
               </span>
-              <span class="text">
+              <span class="text visually-hidden">
                 На эти даты есть свободные номера. Пока есть.
               </span>
             </div>
           </li>
-          <li class="search-modal__item">
+
+          <li class="search-modal__item search-modal__item--departure">
             <label class="search-modal__caption" for="check-out"
               >Дата выезда:</label
             >
@@ -504,74 +505,77 @@
             </div>
           </li>
 
-          <li class="search-modal__item">
-            <div class="">
-              <label class="search-modal__caption" for="adults"
-                >Взрослые:</label
-              >
-              <button
-                class="search-modal__button search-modal__button--adults-dec"
-                type="button"
-              >
-                <span class="visually-hidden">Убавить взрослого</span>
-              </button>
-              <input
-                type="number"
-                id="adults"
-                name="adults"
-                min="1"
-                value="2"
-                required
-              />
-              <button
-                class="search-modal__button search-modal__button--adults-inc"
-                type="button"
-              >
-                <span class="visually-hidden">Прибавить взрослого</span>
-              </button>
-            </div>
-
-            <div>
-              <label class="search-modal__caption" for="child">Дети:</label>
-              <button class="search-modal__tooltip-button" type="button">
-                i
-              </button>
-              <p class="search-modal__tooltip-text visually-hidden">
-                Укажите количество детей, которые будут с&nbsp;вами, возраст
-                которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети
-                до&nbsp;6&nbsp;лет размещаются бесплатно.
-              </p>
-              <button
-                class="search-modal__button search-modal__button--child-dec"
-                type="button"
-              >
-                <span class="visually-hidden">Убавить ребенка</span>
-              </button>
-              <input
-                type="number"
-                id="child"
-                name="child"
-                min="0"
-                value="1"
-                required
-              />
-              <button
-                class="search-modal__button search-modal__button--child-inc"
-                type="button"
-              >
-                <span class="visually-hidden">Прибавить ребенка</span>
-              </button>
-            </div>
-          </li>
-          <li class="search-modal__item">
+          <li class="search-modal__item search-modal__item--adult">
+            <label class="search-modal__caption" for="adults">Взрослые:</label>
             <button
-              class="button button__secondary search-modal__button-accept"
-              type="submit"
+              class="search-modal__button search-modal__button--adults-dec"
+              type="button"
             >
-              Найти
+              <span class="visually-hidden">Убавить взрослого</span>
+              -
+            </button>
+            <input
+              class="search-modal__input search-modal__input--num"
+              type="number"
+              id="adults"
+              name="adults"
+              min="1"
+              value="2"
+              required
+            />
+            <button
+              class="search-modal__button search-modal__button--adults-inc"
+              type="button"
+            >
+              <span class="visually-hidden">Прибавить взрослого</span>
+              +
+            </button>
+          </li>
+          <li class="search-modal__item search-modal__item--children">
+            <label
+              class="search-modal__caption search-modal__caption--child"
+              for="child"
+              >Дети:</label
+            >
+            <button class="search-modal__tooltip-button" type="button">
+              i
+            </button>
+            <p class="search-modal__tooltip-text visually-hidden">
+              Укажите количество детей, которые будут с&nbsp;вами, возраст
+              которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети
+              до&nbsp;6&nbsp;лет размещаются бесплатно.
+            </p>
+            <button
+              class="search-modal__button search-modal__button--child-dec"
+              type="button"
+            >
+              <span class="visually-hidden">Убавить ребенка</span>
+              -
+            </button>
+            <input
+              class="search-modal__input search-modal__input--num"
+              type="number"
+              id="child"
+              name="child"
+              min="0"
+              value="1"
+              required
+            />
+            <button
+              class="search-modal__button search-modal__button--child-inc"
+              type="button"
+            >
+              <span class="visually-hidden">Прибавить ребенка</span>
+              +
             </button>
           </li>
         </ul>
+        <button
+          class="button button__secondary search-modal__button-accept"
+          type="submit"
+        >
+          Найти
+        </button>
       </form>
     </article>
   </body>

@@ -393,17 +393,18 @@ fieldset {
 .search-modal {
   display: flex;
   flex-direction: column;
-  gap: 40px;
   background-color: #ffffff;
   width: 715px;
-  min-height: 561px;
-  outline: 2px solid red;
-  margin-bottom: 20px;
+  outline: 1px solid red;
+  padding: 54px 70px 70px 70px;
+  border-radius: 30px;
 }
 
 .search-modal__box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 54px;
 }
 
 .search-modal__button-close {
@@ -416,21 +417,92 @@ fieldset {
   display: block;
 }
 
+.search-modal__list {
+  display: grid;
+  grid-template-columns: 288px 230px;
+  grid-template-areas:
+    'arrival arrival'
+    'departure departure'
+    'adult children';
+  row-gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 .search-modal__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 155px 1fr;
+  grid-template-areas: 'title input' 'title input';
+  align-items: baseline;
+  grid-area: item;
+}
+
+.search-modal__item--date {
+  grid-area: date;
+}
+
+.search-modal__item--arrival {
+  grid-area: arrival;
+}
+
+.search-modal__item--departure {
+  grid-area: departure;
+}
+
+.search-modal__item--adult {
+  display: inline-flex;
+  grid-area: adult;
+  width: 288px;
+  justify-content: space-between;
+}
+
+.search-modal__item--children {
+  display: inline-flex;
+  grid-area: children;
+  margin-left: auto;
 }
 
 .search-modal__inner {
   display: flex;
   flex-direction: column;
+  grid-area: input;
 }
 
 .search-modal__caption {
   font-weight: 700;
+  grid-area: title;
+  margin-right: auto;
+}
+
+.search-modal__caption--child {
+  width: 54px;
 }
 
 .search-modal__input-error {
   color: #ff5757;
+}
+
+.search-modal__input {
+  width: 420px;
+  height: 50px;
+}
+
+.search-modal__input--num {
+  width: 40px;
+}
+
+.search-modal__container {
+  display: flex;
+  align-items: center;
+}
+
+.search-modal__button {
+  height: 50px;
+  min-width: 40px;
+}
+
+.search-modal__tooltip-button {
+  margin-right: 18px;
 }
 
 .search-modal__button-accept {
