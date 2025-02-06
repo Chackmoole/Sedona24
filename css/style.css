@@ -610,6 +610,10 @@ fieldset {
   margin-bottom: 20px;
 }
 
+.filter__reset-button {
+  width: 160px;
+}
+
 .sorting {
   display: flex;
   min-height: 145px;
