@@ -516,6 +516,7 @@ fieldset {
   flex-direction: column;
   min-height: 408px;
   background-image: url('../img/background/catalog-background 1.png');
+  padding: 36px 72px 84px;
 }
 
 .catalog-page {
@@ -524,34 +525,89 @@ fieldset {
 
 .catalog-page__title {
   font-size: 60px;
-  line-height: 78px;
+  line-height: 68px;
   color: inherit;
+  margin-bottom: 4px;
 }
 
 .breadcrumbs {
   display: flex;
+  align-items: center;
+  margin-bottom: 44px;
 }
 
 .breadcrumbs__link {
   color: inherit;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .filter {
-  display: flex;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 196px 292px 268px 348px;
 }
 
 .filter__inner {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .filter__title {
+  font-size: 20px;
+  line-height: 26px;
   color: inherit;
+  margin-bottom: 30px;
+}
+
+.filter__list {
+  display: grid;
+  gap: 16px;
+}
+
+.filter__item {
+  display: flex;
+  align-items: center;
+}
+
+.filter__checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0 16px 0 0;
+}
+
+.filter__price-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  grid-template-areas: 'minPrice maxPrice' 'control control';
+}
+
+.filter__price-item--min {
+  grid-area: minPrice;
+}
+
+.filter__price-item--max {
+  grid-area: maxPrice;
+}
+
+.filter__control {
+  grid-area: control;
+  display: flex;
+}
+
+.filter__price {
+  width: 144px;
+  height: 48px;
 }
 
 .filter__button {
+  width: 160px;
+  min-height: 48px;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .sorting {
