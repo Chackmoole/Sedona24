@@ -616,17 +616,44 @@ fieldset {
 
 .sorting {
   display: flex;
-  min-height: 145px;
+  align-items: center;
+  padding: 44px 72px 54px;
 }
 
 .sorting__title {
   margin-right: 190px;
 }
 
-.sorting__box {
+.hotels-count {
+  margin-left: 8px;
+}
+
+.sorting__select {
+  width: 288px;
+  min-height: 48px;
+}
+
+.sorting__list {
   display: flex;
   gap: 8px;
   margin-left: auto;
+}
+
+.sorting__item {
+}
+
+.sorting__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.sorting__link--active {
+  border-color: #000000;
 }
 
 .cards__list {
