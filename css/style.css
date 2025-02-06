@@ -528,6 +528,7 @@ fieldset {
   line-height: 68px;
   color: inherit;
   margin-bottom: 4px;
+  text-transform: none;
 }
 
 .breadcrumbs {
@@ -552,7 +553,10 @@ fieldset {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+}
+
+.filter__box {
+  margin-left: 80px;
 }
 
 .filter__title {
