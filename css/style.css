@@ -517,10 +517,11 @@ fieldset {
   min-height: 408px;
   background-image: url('../img/background/catalog-background 1.png');
   padding: 36px 72px 84px;
+  color: #ffffff;
 }
 
 .catalog-page {
-  color: #ffffff;
+  /*color: #ffffff;*/
 }
 
 .catalog-page__title {
@@ -675,9 +676,15 @@ fieldset {
   width: 620px;
 }
 
+.card {
+  padding: 20px;
+}
+
 .card__link {
+  display: block;
   text-decoration: none;
   color: #000000;
+  margin-bottom: 8px;
 }
 
 .card__pic {
@@ -687,6 +694,8 @@ fieldset {
 .card__title {
   font-size: 24px;
   line-height: 31px;
+  color: #000000;
+  margin-bottom: 16px;
 }
 
 .card__text {
@@ -699,12 +708,14 @@ fieldset {
   display: flex;
   gap: 24px;
   width: 300px;
+  margin-bottom: 16px;
 }
 
 .card__button-box {
   display: flex;
   gap: 24px;
   width: 300px;
+  margin-bottom: 16px;
 }
 
 .card__button {
