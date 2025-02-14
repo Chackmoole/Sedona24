@@ -333,25 +333,33 @@ fieldset {
 }
 
 .mailing--main-page {
+  background-color: #000000;
   background-image: url('../img/background/background.png');
+  color: #ffffff;
 }
 
 .mailing--catalog {
-  color: #333333;
+  padding: 72px 200px 140px;
 }
 
 .mailing__title {
   margin-bottom: 28px;
-  color: #ffffff;
+  color: inherit;
 }
 
 .mailing__title--catalog {
-  color: #000000;
+  margin-bottom: 48px;
 }
 
 .mailing__caption {
+  width: 720px;
   margin-bottom: 48px;
-  color: #ffffff;
+  text-align: center;
+}
+
+.mailing__input {
+  height: 60px;
+  width: 600px;
 }
 
 .main-footer {
@@ -663,7 +671,6 @@ fieldset {
 
 .cards {
   padding: 0 72px;
-  margin-bottom: 72px;
 }
 
 .cards__list {
