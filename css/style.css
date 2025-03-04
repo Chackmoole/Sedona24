@@ -213,6 +213,12 @@ fieldset {
   color: #000000;
 }
 
+.advantages__img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .advantages__inner {
   display: flex;
   flex-direction: column;
@@ -310,14 +316,15 @@ fieldset {
 /*Модальное окно поиска*/
 
 .search-modal {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*gap: 40px;*/
   background-color: #ffffff;
   width: 715px;
-  min-height: 561px;
+  /*min-height: 561px;*/
   outline: 2px solid red;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
+  display: grid;
 }
 
 .search-modal__box {
@@ -438,6 +445,9 @@ fieldset {
 
 .card__pic {
   margin-bottom: 16px;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .card__title {
