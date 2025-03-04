@@ -316,20 +316,23 @@ fieldset {
 /*Модальное окно поиска*/
 
 .search-modal {
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*gap: 40px;*/
   background-color: #ffffff;
   width: 715px;
-  /*min-height: 561px;*/
   outline: 2px solid red;
-  /*margin-bottom: 20px;*/
+  padding: 54px 70px 70px;
+}
+
+.search-modal__form {
   display: grid;
+  grid-template-columns: 156px 132px 56px 96px 132px;
+  align-items: center;
 }
 
 .search-modal__box {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 54px;
+  align-items: center;
 }
 
 .search-modal__button-close {
@@ -346,21 +349,58 @@ fieldset {
   display: flex;
 }
 
-.search-modal__inner {
-  display: flex;
-  flex-direction: column;
-}
-
 .search-modal__caption {
   font-weight: 700;
+  grid-column: 1 / 2;
+}
+
+.search-modal__caption--children {
+  grid-column: 4 / 5;
+}
+
+.search-modal__inner {
+  grid-column: 2 / -1;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.search-modal__container {
+  display: flex;
+  width: 136px;
+  grid-column: 2 / 3;
+}
+
+.search-modal__container--children {
+  grid-column: 5 / -1;
+}
+
+.search-modal__input {
+  height: 50px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.search-modal__input--date {
+  grid-column: 2 / -1;
+}
+
+.search-modal__input__count {
+  width: 44px;
 }
 
 .search-modal__input-error {
   color: #ff5757;
 }
 
+.search-modal__button--count {
+  width: 44px;
+  height: 50px;
+  border: none;
+}
+
 .search-modal__button-accept {
-  width: 100%;
+  margin-top: 40px;
+  grid-column: 1 / -1;
 }
 
 /*Страница каталога*/
