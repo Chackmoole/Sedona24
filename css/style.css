@@ -255,6 +255,13 @@ fieldset {
 .advantages__box--img {
   padding-top: 0;
 }
+
+.advantages__img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .advantages__inner {
   display: flex;
   flex-direction: column;
@@ -674,6 +681,9 @@ fieldset {
 
 .card__pic {
   margin-bottom: 16px;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .card__title {
