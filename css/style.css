@@ -120,17 +120,18 @@ fieldset {
 
 .main-header {
   background-color: #ffffff;
+  margin-bottom: -5px;
 }
 
 .main-header__container {
   display: flex;
   width: 1060px;
-  min-height: 70px;
   margin: 0 auto;
 }
 
 .main-header__logo {
   margin-right: 30px;
+  z-index: 2;
 }
 
 .main-nav {
@@ -141,15 +142,16 @@ fieldset {
 .main-nav__list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 4px;
-  column-gap: 34px;
+  row-gap: 20px;
+  column-gap: 19px;
   list-style-type: none;
   align-items: center;
-  padding: 17px 20px;
+  margin: 9px;
+  /*padding: 16px 18px;*/
 }
 
 .main-nav__item {
-  display: block;
+  position: relative;
 }
 
 .main-nav__link {
@@ -158,6 +160,19 @@ fieldset {
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  padding: 8px 8px 18px;
+}
+
+.main-nav__link--active::after {
+  position: absolute;
+  content: '';
+  /*top: 10px;*/
+  bottom: -17px;
+  height: 2px;
+  left: 7px;
+  right: 7px;
+  background-color: #756257;
+  z-index: 5;
 }
 
 .user-block {
@@ -184,7 +199,7 @@ fieldset {
   text-decoration: none;
 }
 
-.vertical-stretch-box {
+.main-page {
 }
 
 .page-wrapper {
@@ -505,7 +520,6 @@ fieldset {
 }
 
 .catalog-page {
-  /*color: #ffffff;*/
 }
 
 .catalog-page__title {
