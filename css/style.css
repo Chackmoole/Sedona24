@@ -74,12 +74,26 @@ fieldset {
 
 .button {
   font-family: inherit;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #756257;
+  padding: 8px 34px;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button--secondary {
@@ -183,6 +197,7 @@ fieldset {
   row-gap: 4px;
   min-width: 308px;
   margin-left: auto;
+  margin-bottom: 4px;
 }
 
 .user-block__item {
