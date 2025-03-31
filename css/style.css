@@ -161,7 +161,6 @@ fieldset {
   list-style-type: none;
   align-items: center;
   margin: 9px;
-  /*padding: 16px 18px;*/
 }
 
 .main-nav__item {
@@ -180,13 +179,20 @@ fieldset {
 .main-nav__link--active::after {
   position: absolute;
   content: '';
-  /*top: 10px;*/
   bottom: -17px;
   height: 2px;
   left: 7px;
   right: 7px;
   background-color: #756257;
   z-index: 5;
+}
+
+.main-nav__link:hover {
+  color: #756257;
+}
+
+.main-nav__link:active {
+  color: rgba(117, 98, 87, 0.3);
 }
 
 .user-block {
