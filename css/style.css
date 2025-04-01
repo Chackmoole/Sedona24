@@ -217,6 +217,11 @@ fieldset {
   margin-left: 20px;
 }
 
+.user-block__link svg path {
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
 .user-block__link:hover svg path {
   fill: #756257;
 }
@@ -242,6 +247,8 @@ fieldset {
   background-color: #7db550;
   border-radius: 50%;
   letter-spacing: -0.1em;
+  transition: 400ms;
+  transition-timing-function: ease-in-out;
 }
 
 .user-block__link--buy-button {
