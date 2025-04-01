@@ -319,7 +319,7 @@ fieldset {
   align-items: center;
   width: 400px;
   min-height: 384px;
-  padding: 96px 16px 16px;
+  padding: 98px 16px 16px;
 }
 
 .advantages__box--img {
@@ -365,8 +365,21 @@ fieldset {
 }
 
 .advantages__text {
+  position: relative;
   color: inherit;
   margin-bottom: 30px;
+}
+
+.advantages__text::before {
+  position: absolute;
+  content: '—';
+  left: -18px;
+}
+
+.advantages__text::after {
+  position: absolute;
+  content: '—';
+  right: -18px;
 }
 
 .advantages__item--colored {
