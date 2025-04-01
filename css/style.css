@@ -267,10 +267,9 @@ fieldset {
 .main-page__container {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 485px;
   justify-content: center;
+  min-height: 485px;
+  padding-top: 50px;
   background-color: #68a2ca;
   background-image: url('../img/background/index-background.jpg');
   background-repeat: no-repeat;
@@ -289,7 +288,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 64px;
+  padding-top: 62px;
   padding-bottom: 80px;
 }
 
