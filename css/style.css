@@ -81,6 +81,7 @@ fieldset {
   text-transform: uppercase;
   background-color: #756257;
   padding: 8px 34px;
+  border: none;
   border-radius: 4px;
 }
 
@@ -98,6 +99,12 @@ fieldset {
 
 .button--secondary {
   background-color: #83b3d3;
+}
+
+.button--large {
+  font-size: 20px;
+  padding: 20px 150px;
+  border-radius: 10px;
 }
 
 .button--reset {
