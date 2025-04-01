@@ -207,6 +207,7 @@ fieldset {
 }
 
 .user-block__item {
+  position: relative;
   display: flex;
   justify-content: center;
   min-width: 42px;
@@ -216,7 +217,34 @@ fieldset {
   margin-left: 20px;
 }
 
-.user-block__buy-button {
+.user-block__link:hover svg path {
+  fill: #756257;
+}
+.user-block__link:active .user-block__favorite-count {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.user-block__link:active svg path {
+  fill: rgb(117, 98, 87, 0.3);
+}
+
+.user-block__favorite-count {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19px;
+  height: 19px;
+  top: -9px;
+  right: -1px;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #7db550;
+  border-radius: 50%;
+  letter-spacing: -0.1em;
+}
+
+.user-block__link--buy-button {
   text-decoration: none;
 }
 
