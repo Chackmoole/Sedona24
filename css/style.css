@@ -465,17 +465,16 @@ fieldset {
   min-height: 120px;
   width: 1200px;
   margin: 0 auto;
-  padding: 40px 72px;
+  padding: 40px 72px 40px 62px;
 }
 
 .socials {
-  display: flex;
-  justify-content: space-between;
-  width: 107px;
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  gap: 10px;
 }
 
 .main-footer__socials {
-  margin-right: 60px;
 }
 
 .socials__link svg path {
@@ -496,7 +495,9 @@ fieldset {
   border-radius: 10px;
 }
 
-.socials__link:focus {
+.socials__link:focus,
+.main-footer__phone-link:focus,
+.main-footer__academy-link:focus {
   outline: 0;
   box-shadow: inset 0 0 0 3px #68a2ca;
 }
@@ -510,7 +511,8 @@ fieldset {
 }
 
 .main-footer__phone-link {
-  width: 720px;
+  width: 360px;
+  margin-left: 218px;
   font-family: 'PT Sans', sans-serif;
   font-size: 40px;
   line-height: 40px;
@@ -518,10 +520,21 @@ fieldset {
   color: #000000;
   text-align: center;
   text-decoration: none;
+  transition: 300ms;
+  transition-timing-function: ease-in-out;
 }
 
 .main-footer__academy-link {
   margin-left: auto;
+  transition: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.main-footer__phone-link:hover {
+  color: #756257;
+}
+.main-footer__academy-link:hover svg path {
+  fill: #756257;
 }
 
 /*Модальное окно поиска*/
