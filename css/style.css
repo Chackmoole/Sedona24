@@ -832,13 +832,27 @@ fieldset {
 
 .card__link {
   display: block;
+  margin-bottom: 16px;
   text-decoration: none;
   color: #000000;
-  margin-bottom: 8px;
+  border: none;
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.card__link:hover {
+  opacity: 0.6;
+}
+
+.card__link:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.card__link:active {
+  opacity: 0.3;
 }
 
 .card__pic {
-  margin-bottom: 16px;
   object-fit: cover;
   max-width: 100%;
   max-height: 100%;
@@ -859,26 +873,30 @@ fieldset {
 
 .card__inner {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   width: 300px;
   margin-bottom: 16px;
 }
 
 .card__button-box {
   display: flex;
-  gap: 24px;
+  justify-content: space-between;
   width: 300px;
   margin-bottom: 16px;
 }
 
 .card__button {
-  width: 100%;
-  min-height: 40px;
+  /*min-height: 40px;*/
   font-size: 16px;
+  padding: 8px 20px;
 }
 
 .card__info {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .card__button--favourite {
@@ -895,6 +913,17 @@ fieldset {
 .card__stars {
   display: flex;
   gap: 7px;
+}
+
+.card__star--color {
+  display: block;
+  background-image: url('/img/svg/Star.svg');
+  width: 18px;
+  height: 17px;
+}
+
+.card__rating-text {
+  text-transform: uppercase;
 }
 
 .card__rating {
