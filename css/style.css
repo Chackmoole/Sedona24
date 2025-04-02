@@ -478,6 +478,33 @@ fieldset {
   margin-right: 60px;
 }
 
+.socials__link svg path {
+  transition: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.socials__link:hover svg path {
+  fill: #68a2ca;
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.socials__link:focus {
+  outline: 0;
+  box-shadow: inset 0 0 0 3px #68a2ca;
+}
+
+.socials__link:focus svg path {
+  fill: #68a2ca;
+}
+
 .main-footer__phone-link {
   width: 720px;
   font-family: 'PT Sans', sans-serif;
