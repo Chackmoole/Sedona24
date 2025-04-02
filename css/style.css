@@ -632,9 +632,8 @@ fieldset {
 .catalog-page__header {
   display: flex;
   flex-direction: column;
-  min-height: 408px;
   background-image: url('../img/background/catalog-background 1.png');
-  padding: 36px 72px 84px;
+  padding: 40px 72px 83px;
   color: #ffffff;
 }
 
@@ -645,7 +644,6 @@ fieldset {
   font-size: 60px;
   line-height: 68px;
   color: inherit;
-  margin-bottom: 4px;
   text-transform: none;
 }
 
@@ -653,6 +651,19 @@ fieldset {
   display: flex;
   align-items: center;
   margin-bottom: 44px;
+}
+
+.breadcrumbs__item:not(:last-child) {
+  position: relative;
+  margin-right: 26px;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: '>';
+  position: absolute;
+  top: -4px;
+  left: 22px;
+  opacity: 0.3;
 }
 
 .breadcrumbs__link {
@@ -680,8 +691,10 @@ fieldset {
 .filter__title {
   font-size: 20px;
   line-height: 26px;
+  font-weight: 700;
   color: inherit;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .filter__list {
