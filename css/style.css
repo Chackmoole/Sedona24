@@ -505,6 +505,10 @@ fieldset {
   fill: #68a2ca;
 }
 
+.socials__link:active svg path {
+  fill: rgb(104, 162, 202, 0.3);
+}
+
 .main-footer__phone-link {
   width: 720px;
   font-family: 'PT Sans', sans-serif;
