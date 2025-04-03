@@ -819,11 +819,16 @@ fieldset {
   display: flex;
   justify-content: center;
   padding: 30px 0;
-  margin: 0 72px 30px;
+  margin-bottom: 30px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .cards__button {
-  width: 620px;
+  font-size: 20px;
+  min-width: 620px;
+  margin: 0 auto;
+  padding: 20px 238px;
 }
 
 .card {
@@ -886,7 +891,6 @@ fieldset {
 }
 
 .card__button {
-  /*min-height: 40px;*/
   font-size: 16px;
   padding: 8px 20px;
 }
