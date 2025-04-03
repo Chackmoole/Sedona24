@@ -90,6 +90,7 @@ fieldset {
 }
 
 .button:focus {
+  background-color: #615048;
   outline: 3px solid #83b3d3;
 }
 
@@ -99,6 +100,18 @@ fieldset {
 
 .button--secondary {
   background-color: #83b3d3;
+}
+
+.button--secondary:hover {
+  background-color: #68a2ca;
+}
+
+.button--secondary:focus {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
+}
+
+.button--secondary:active {
 }
 
 .button--large {
@@ -819,7 +832,7 @@ fieldset {
   display: flex;
   justify-content: center;
   padding: 30px 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -965,7 +978,10 @@ fieldset {
   align-items: center;
   width: 55px;
   height: 55px;
+  font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
+  padding: 0;
 }
 
 .pagination__link--disable {
