@@ -449,7 +449,7 @@ fieldset {
 }
 
 .mailing--catalog {
-  padding: 72px 200px 140px;
+  padding: 72px 200px 124px;
 }
 
 .mailing__title {
@@ -524,8 +524,10 @@ fieldset {
 }
 
 .main-footer__phone-link {
-  width: 360px;
+  display: block;
+  padding: 15px;
   margin-left: 218px;
+  border-radius: 10px;
   font-family: 'PT Sans', sans-serif;
   font-size: 40px;
   line-height: 40px;
@@ -538,7 +540,10 @@ fieldset {
 }
 
 .main-footer__academy-link {
+  display: block;
   margin-left: auto;
+  padding: 18px 22px;
+  border-radius: 10px;
   transition: 300ms;
   transition-timing-function: ease-in-out;
 }
@@ -546,8 +551,17 @@ fieldset {
 .main-footer__phone-link:hover {
   color: #756257;
 }
+
+.main-footer__phone-link:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
 .main-footer__academy-link:hover svg path {
   fill: #756257;
+}
+
+.main-footer__academy-link:active svg path {
+  fill: rgba(117, 98, 87, 0.3);
 }
 
 /*Модальное окно поиска*/
