@@ -763,6 +763,7 @@ fieldset {
 
 .filter__box {
   margin-left: 80px;
+  gap: 20px;
 }
 
 .filter__title {
@@ -893,11 +894,11 @@ fieldset {
   width: 160px;
   min-height: 48px;
   font-size: 16px;
-  margin-bottom: 20px;
 }
 
 .filter__reset-button {
   width: 160px;
+  padding: 0;
 }
 
 .sorting {
