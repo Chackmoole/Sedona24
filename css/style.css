@@ -72,6 +72,48 @@ fieldset {
   border: none;
 }
 
+.field {
+  padding: 17px 22px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 26;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+}
+
+.field::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.field:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+
+.field:focus {
+  outline: 3px solid #83b3d3;
+  background-color: #e5e5e5;
+}
+
+.field:disabled {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: auto;
+}
+
+.field:disabled::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.field:focus:invalid {
+  box-shadow: inset 0 0 0 3px #ff5757;
+}
+
+.field--error {
+  box-shadow: inset 0 0 0 3px #ff5757;
+}
+
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -87,6 +129,7 @@ fieldset {
 
 .button:hover {
   background-color: #615048;
+  cursor: pointer;
 }
 
 .button:focus {
@@ -452,6 +495,10 @@ fieldset {
   padding: 72px 200px 124px;
 }
 
+.mailing__form {
+  display: flex;
+}
+
 .mailing__title {
   margin-bottom: 28px;
   color: inherit;
@@ -470,6 +517,11 @@ fieldset {
 .mailing__input {
   height: 60px;
   width: 600px;
+  border-radius: 10px 0 0 10px;
+}
+
+.mailing__button {
+  border-radius: 0 10px 10px 0;
 }
 
 .main-footer {
