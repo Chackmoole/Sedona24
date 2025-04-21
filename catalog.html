@@ -238,7 +238,9 @@
           </fieldset>
 
           <fieldset>
-            <legend class="filter__title">Стоимость, ₽:</legend>
+            <legend class="filter__title filter__title--price">
+              Стоимость, ₽:
+            </legend>
             <ul class="filter__price-list">
               <li class="filter__price-item filter__price-item--min">
                 <label
@@ -275,10 +277,12 @@
                 </label>
               </li>
               <li class="filter__control">
-                <button></button>
-                <div></div>
-                <div></div>
-                <button></button>
+                <div class="range">
+                  <div class="range__bar" style="left: 0; width: 227px">
+                    <button class="range__toggle range__toggle--min"></button>
+                    <button class="range__toggle range__toggle--max"></button>
+                  </div>
+                </div>
               </li>
             </ul>
           </fieldset>

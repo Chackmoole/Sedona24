@@ -774,6 +774,10 @@ fieldset {
   padding: 0;
 }
 
+.filter__title--price {
+  margin-bottom: 34px;
+}
+
 .filter__list {
   display: grid;
   gap: 16px;
@@ -854,6 +858,35 @@ fieldset {
 .filter__control {
   grid-area: control;
   display: flex;
+  margin-top: 10px;
+}
+
+.range {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+
+.range__bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range__toggle {
+  position: absolute;
+  top: -8px;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range__toggle--max {
+  left: 216px;
 }
 
 .filter__button {
