@@ -805,14 +805,55 @@ fieldset {
   grid-area: maxPrice;
 }
 
+.filter__price-label {
+  display: flex;
+  align-items: baseline;
+  width: 144px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  padding-right: 14px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.filter__price-label:focus-within {
+  box-shadow: inset 0 0 0 3px #81b3d2;
+  outline: 3px solid #81b3d2;
+  border: 2px solid #ffffff;
+}
+
+.filter__price-label--minPrice {
+  border-radius: 4px 0 0 4px;
+}
+
+.filter__price-label--maxPrice {
+  border-radius: 0 4px 4px 0;
+  margin-left: -2px;
+}
+
+.filter__price-input {
+  display: block;
+  width: 100%;
+  padding: 10px 10px 10px 19px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+.filter__price-input {
+  outline: none;
+}
+
+.filter__price-input::-webkit-outer-spin-button,
+.filter__price-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .filter__control {
   grid-area: control;
   display: flex;
-}
-
-.filter__price {
-  width: 144px;
-  height: 48px;
 }
 
 .filter__button {
@@ -849,9 +890,6 @@ fieldset {
   display: flex;
   gap: 8px;
   margin-left: auto;
-}
-
-.sorting__item {
 }
 
 .sorting__link {

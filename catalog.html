@@ -241,27 +241,37 @@
             <legend class="filter__title">Стоимость, ₽:</legend>
             <ul class="filter__price-list">
               <li class="filter__price-item filter__price-item--min">
-                <label class="filter__price" for="minPrice">
+                <label
+                  class="filter__price-label filter__price-label--minPrice"
+                  for="minPrice"
+                >
                   <span class="visually-hidden">минимальная цена</span>
                   <input
-                    class="filter__price filter__min-price"
+                    class="filter__price-input filter__min-price"
                     type="number"
                     name="minPrice"
                     id="minPrice"
                     value="0"
+                    min="0"
                   />
+                  <span>от</span>
                 </label>
               </li>
               <li class="filter__price-item filter__price-item--max">
-                <label class="filter__price" for="maxPrice">
+                <label
+                  class="filter__price-label filter__price-label--maxPrice"
+                  for="maxPrice"
+                >
                   <span class="visually-hidden">Максимальная цена</span>
                   <input
-                    class="filter__price filter__max-price"
+                    class="filter__price-input filter__max-price"
                     type="number"
                     name="maxPrice"
                     id="maxPrice"
                     value="9000"
+                    min="1"
                   />
+                  <span>до</span>
                 </label>
               </li>
               <li class="filter__control">
