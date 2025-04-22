@@ -886,6 +886,14 @@ fieldset {
   cursor: pointer;
 }
 
+.range__toggle:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.range__toggle:active {
+  outline: 2px solid #83b3d3;
+}
+
 .range__toggle--max {
   left: 216px;
 }
@@ -899,6 +907,12 @@ fieldset {
 .filter__reset-button {
   width: 160px;
   padding: 0;
+}
+
+.filter__reset-button:hover,
+.filter__reset-button:focus,
+.filter__reset-button:active {
+  background-color: transparent;
 }
 
 .sorting {

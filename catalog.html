@@ -279,8 +279,16 @@
               <li class="filter__control">
                 <div class="range">
                   <div class="range__bar" style="left: 0; width: 227px">
-                    <button class="range__toggle range__toggle--min"></button>
-                    <button class="range__toggle range__toggle--max"></button>
+                    <button class="range__toggle range__toggle--min">
+                      <span class="visually-hidden"
+                        >кнопка диапазона уменьшения цены</span
+                      >
+                    </button>
+                    <button class="range__toggle range__toggle--max">
+                      <span class="visually-hidden"
+                        >кнопка диапазона увеличения цены</span
+                      >
+                    </button>
                   </div>
                 </div>
               </li>
@@ -295,7 +303,7 @@
             </button>
             <button
               class="button button--reset filter__reset-button"
-              type="submit"
+              type="button"
             >
               Сбросить
             </button>
