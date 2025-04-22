@@ -811,6 +811,7 @@ fieldset {
 }
 
 .filter__price-label {
+  position: relative;
   display: flex;
   align-items: baseline;
   width: 144px;
@@ -826,6 +827,15 @@ fieldset {
   border: 2px solid #ffffff;
 }
 
+.filter__price-label:hover {
+  color: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.filter__price-label:active {
+  background-color: #756257;
+}
+
 .filter__price-label--minPrice {
   border-radius: 4px 0 0 4px;
 }
@@ -838,7 +848,7 @@ fieldset {
 .filter__price-input {
   display: block;
   width: 100%;
-  padding: 10px 10px 10px 19px;
+  padding: 10px 22px 10px 19px;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   color: #ffffff;
@@ -854,6 +864,12 @@ fieldset {
 .filter__price-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.filter__price-input ~ span {
+  position: absolute;
+  top: 10px;
+  right: 14px;
 }
 
 .filter__control {
