@@ -805,6 +805,8 @@ fieldset {
 
 .filter__item input[type='checkbox']:checked + .filter__checkbox {
   background-image: url('/img/svg/control=checkbox.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter__item input[type='checkbox']:disabled + .filter__checkbox {
