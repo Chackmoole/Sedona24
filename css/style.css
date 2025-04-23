@@ -576,13 +576,17 @@ fieldset {
   min-height: 120px;
   width: 1200px;
   margin: 0 auto;
-  padding: 40px 72px 40px 62px;
+  padding: 40px 50px 40px 60px;
+}
+
+.main-footer--main-page {
+  padding-top: 24px;
 }
 
 .socials {
   display: grid;
   grid-template-columns: repeat(3, 40px);
-  gap: 10px;
+  gap: 5px;
 }
 
 .main-footer__socials {
@@ -624,7 +628,7 @@ fieldset {
 .main-footer__phone-link {
   display: block;
   padding: 15px;
-  margin-left: 218px;
+  margin-left: 230px;
   border-radius: 10px;
   font-family: 'PT Sans', sans-serif;
   font-size: 40px;
