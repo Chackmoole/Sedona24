@@ -327,21 +327,25 @@
           name="sorting"
         >
           <label class="visually-hidden" for="sort">Сортировка по</label>
-          <select class="sorting__select" name="sort" id="sort">
-            <option class="sorting__option" value="minPrice">
-              Сначала дешевые
-            </option>
-            <option class="sorting__option" value="maxPrice">
-              Сначала дорогие
-            </option>
-            <option class="sorting__option" value="popular">Популярные</option>
-            <option class="sorting__option" value="minStars">
-              Сначала меньше звезд
-            </option>
-            <option class="sorting__option" value="maxStars">
-              Сначала больше звезд
-            </option>
-          </select>
+          <div class="sorting__select-wrapper">
+            <select class="sorting__select" name="sort" id="sort">
+              <option class="sorting__option" value="minPrice">
+                Сначала дешевые
+              </option>
+              <option class="sorting__option" value="maxPrice">
+                Сначала дорогие
+              </option>
+              <option class="sorting__option" value="popular">
+                Популярные
+              </option>
+              <option class="sorting__option" value="minStars">
+                Сначала меньше звезд
+              </option>
+              <option class="sorting__option" value="maxStars">
+                Сначала больше звезд
+              </option>
+            </select>
+          </div>
         </form>
         <ul class="sorting__list">
           <li class="sorting__item">

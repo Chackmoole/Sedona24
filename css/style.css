@@ -988,9 +988,50 @@ fieldset {
   margin-left: 8px;
 }
 
+.sorting__select-wrapper {
+  position: relative;
+}
+
 .sorting__select {
+  font-size: inherit;
+  font-family: inherit;
   width: 288px;
   min-height: 48px;
+  padding: 10px 20px 12px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.sorting__select-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 45px;
+  background-image: url('/img/svg/dropdown 1.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 2px;
+  top: 4px;
+  z-index: -1;
+}
+
+.sorting__select:hover {
+  border: 2px solid #83b3d3;
+}
+
+.sorting__select:active {
+  border: 2px solid #e5e5e5;
+  color: #e5e5e5;
+}
+
+.sorting__select:focus-visible {
+  border: 2px solid #83b3d3;
+  outline: none;
 }
 
 .sorting__list {
