@@ -782,6 +782,7 @@ fieldset {
 .filter__list {
   display: grid;
   gap: 16px;
+  justify-content: start;
 }
 
 .filter__item {
@@ -789,10 +790,39 @@ fieldset {
   align-items: center;
 }
 
+.filter__item:hover .filter__checkbox {
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.filter__item:focus-within .filter__checkbox {
+  outline: 3px solid #83b3d3;
+}
+
+.filter__item:active .filter__checkbox {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.filter__item input[type='checkbox']:checked + .filter__checkbox {
+  background-image: url('/img/svg/control=checkbox.svg');
+}
+
+.filter__item input[type='checkbox']:disabled + .filter__checkbox {
+  background-color: darkgray;
+  cursor: auto;
+}
+
 .filter__checkbox {
+  position: absolute;
   width: 20px;
   height: 20px;
-  margin: 0 16px 0 0;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.filter__caption {
+  padding-left: 40px;
+  z-index: 1;
 }
 
 .filter__price-list {
