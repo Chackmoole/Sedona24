@@ -327,8 +327,8 @@
           name="sorting"
         >
           <label class="visually-hidden" for="sort">Сортировка по</label>
-          <div class="sorting__select-wrapper">
-            <select class="sorting__select" name="sort" id="sort">
+          <div class="select-wrapper">
+            <select class="select sorting__select" name="sort" id="sort">
               <option class="sorting__option" value="minPrice">
                 Сначала дешевые
               </option>
@@ -611,18 +611,24 @@
           <label class="cards__text" for="page-count">
             Гостиниц на странице:
           </label>
-          <select class="cards__count" name="page-count" id="page-count">
-            <option class="cards__option" value="1">1</option>
-            <option class="cards__option" value="2">2</option>
-            <option class="cards__option" value="3">3</option>
-            <option class="cards__option" value="4" selected>4</option>
-            <option class="cards__option" value="5">5</option>
-            <option class="cards__option" value="6">6</option>
-            <option class="cards__option" value="7">7</option>
-            <option class="cards__option" value="8">8</option>
-            <option class="cards__option" value="9">9</option>
-            <option class="cards__option" value="10">10</option>
-          </select>
+          <div class="select-wrapper">
+            <select
+              class="select cards__count"
+              name="page-count"
+              id="page-count"
+            >
+              <option class="cards__option" value="1">1</option>
+              <option class="cards__option" value="2">2</option>
+              <option class="cards__option" value="3">3</option>
+              <option class="cards__option" value="4" selected>4</option>
+              <option class="cards__option" value="5">5</option>
+              <option class="cards__option" value="6">6</option>
+              <option class="cards__option" value="7">7</option>
+              <option class="cards__option" value="8">8</option>
+              <option class="cards__option" value="9">9</option>
+              <option class="cards__option" value="10">10</option>
+            </select>
+          </div>
         </div>
       </section>
       <section class="mailing mailing--catalog">
