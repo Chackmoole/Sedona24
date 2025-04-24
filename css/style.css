@@ -685,7 +685,6 @@ input[type='date']::-webkit-calendar-picker-indicator {
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   width: 715px;
-  outline: 2px solid red;
   padding: 54px 70px 70px;
   z-index: 11;
   border-radius: 30px;
@@ -906,6 +905,10 @@ input[type='date']::-webkit-calendar-picker-indicator {
 .search-modal__button-accept {
   margin-top: 40px;
   grid-column: 1 / -1;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 10px 0;
+  border-radius: 10px;
 }
 
 /*Страница каталога*/
