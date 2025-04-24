@@ -468,127 +468,133 @@
     </footer>
 
     <article class="search-modal">
-      <div class="search-modal__box">
-        <h2 class="title title--h2 search-modal__title">
-          Поиск гостиницы в Седоне
-        </h2>
-        <button class="button search-modal__button-close">
-          <span class="visually-hidden">Закрыть окно бронирования</span>
-        </button>
-      </div>
+      <div class="search-modal__wrapper">
+        <div class="search-modal__box">
+          <h2 class="title title--h2 search-modal__title">
+            Поиск гостиницы в Седоне
+          </h2>
+          <button class="search-modal__button-close">
+            <span class="visually-hidden">Закрыть окно бронирования</span>
+          </button>
+        </div>
 
-      <form
-        class="search-modal__form"
-        action="https://echo.htmlacademy.ru/"
-        method="get"
-        name="hotel-search"
-      >
-        <label class="search-modal__caption" for="check-in">Дата заезда:</label>
-        <input
-          class="search-modal__input search-modal__input--date"
-          type="date"
-          name="check-in"
-          id="check-in"
-          min="2024-10-18"
-          required
-        />
-        <div class="search-modal__inner">
-          <span class="text search-modal__input-error">
-            Мы не можем отправить вас в прошлое.
-          </span>
-          <span class="text visually-hidden">
-            На эти даты есть свободные номера. Пока есть.
-          </span>
-        </div>
-        <label class="search-modal__caption" for="check-out"
-          >Дата выезда:</label
+        <form
+          class="search-modal__form"
+          action="https://echo.htmlacademy.ru/"
+          method="get"
+          name="hotel-search"
         >
-        <input
-          class="search-modal__input search-modal__input--date"
-          type="date"
-          name="check-out"
-          id="check-out"
-          min="2024-10-19"
-          required
-        />
-        <div class="search-modal__inner">
-          <span class="text search-modal__input-error visually-hidden">
-            Мы не можем отправить вас в прошлое.
-          </span>
-          <span class="text">
-            На эти даты есть свободные номера. Пока есть.
-          </span>
-        </div>
-        <label class="search-modal__caption" for="adults">Взрослые:</label>
-        <div class="search-modal__container">
-          <button
-            class="search-modal__button search-modal__button--count search-modal__button--adults-dec"
-            type="button"
+          <label class="search-modal__caption" for="check-in"
+            >Дата заезда:</label
           >
-            <span class="visually-hidden">Убавить взрослого</span>
-          </button>
           <input
-            class="search-modal__input search-modal__input__count"
-            type="number"
-            id="adults"
-            name="adults"
-            min="1"
-            value="2"
+            class="search-modal__input search-modal__input--date"
+            type="date"
+            name="check-in"
+            id="check-in"
+            min="2024-10-18"
             required
           />
-          <button
-            class="search-modal__button search-modal__button--count search-modal__button--adults-inc"
-            type="button"
+          <div class="search-modal__inner">
+            <span class="text search-modal__input-error">
+              Мы не можем отправить вас в прошлое.
+            </span>
+            <span class="text visually-hidden">
+              На эти даты есть свободные номера. Пока есть.
+            </span>
+          </div>
+          <label class="search-modal__caption" for="check-out"
+            >Дата выезда:</label
           >
-            <span class="visually-hidden">Прибавить взрослого</span>
-          </button>
-        </div>
-        <label
-          class="search-modal__caption search-modal__caption--children"
-          for="child"
-          >Дети:</label
-        >
-        <div class="search-modal__container search-modal__container--children">
-          <button
-            class="search-modal__tooltip-button visually-hidden"
-            type="button"
-          >
-            i
-          </button>
-          <p class="search-modal__tooltip-text visually-hidden">
-            Укажите количество детей, которые будут с&nbsp;вами, возраст которых
-            от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет
-            размещаются бесплатно.
-          </p>
-          <button
-            class="search-modal__button search-modal__button--count search-modal__button--child-dec"
-            type="button"
-          >
-            <span class="visually-hidden">Убавить ребенка</span>
-          </button>
           <input
-            class="search-modal__input search-modal__input__count"
-            type="number"
-            id="child"
-            name="child"
-            min="0"
-            value="1"
+            class="search-modal__input search-modal__input--date"
+            type="date"
+            name="check-out"
+            id="check-out"
+            min="2024-10-19"
             required
           />
-          <button
-            class="search-modal__button search-modal__button--count search-modal__button--child-inc"
-            type="button"
+          <div class="search-modal__inner">
+            <span class="text search-modal__input-error visually-hidden">
+              Мы не можем отправить вас в прошлое.
+            </span>
+            <span class="text">
+              На эти даты есть свободные номера. Пока есть.
+            </span>
+          </div>
+          <label class="search-modal__caption" for="adults">Взрослые:</label>
+          <div class="search-modal__container">
+            <button
+              class="search-modal__button search-modal__button--count search-modal__button--adults-dec"
+              type="button"
+            >
+              <span class="visually-hidden">Убавить взрослого</span>
+            </button>
+            <input
+              class="search-modal__input search-modal__input__count"
+              type="number"
+              id="adults"
+              name="adults"
+              min="1"
+              value="2"
+              required
+            />
+            <button
+              class="search-modal__button search-modal__button--count search-modal__button--adults-inc"
+              type="button"
+            >
+              <span class="visually-hidden">Прибавить взрослого</span>
+            </button>
+          </div>
+          <label
+            class="search-modal__caption search-modal__caption--children"
+            for="child"
+            >Дети:</label
           >
-            <span class="visually-hidden">Прибавить ребенка</span>
+          <div
+            class="search-modal__container search-modal__container--children"
+          >
+            <button
+              class="search-modal__tooltip-button visually-hidden"
+              type="button"
+            >
+              i
+            </button>
+            <p class="search-modal__tooltip-text visually-hidden">
+              Укажите количество детей, которые будут с&nbsp;вами, возраст
+              которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети
+              до&nbsp;6&nbsp;лет размещаются бесплатно.
+            </p>
+            <button
+              class="search-modal__button search-modal__button--count search-modal__button--child-dec"
+              type="button"
+            >
+              <span class="visually-hidden">Убавить ребенка</span>
+            </button>
+            <input
+              class="search-modal__input search-modal__input__count"
+              type="number"
+              id="child"
+              name="child"
+              min="0"
+              value="1"
+              required
+            />
+            <button
+              class="search-modal__button search-modal__button--count search-modal__button--child-inc"
+              type="button"
+            >
+              <span class="visually-hidden">Прибавить ребенка</span>
+            </button>
+          </div>
+          <button
+            class="button button__secondary search-modal__button-accept"
+            type="submit"
+          >
+            Найти
           </button>
-        </div>
-        <button
-          class="button button__secondary search-modal__button-accept"
-          type="submit"
-        >
-          Найти
-        </button>
-      </form>
+        </form>
+      </div>
     </article>
   </body>
 </html>

@@ -669,10 +669,24 @@ fieldset {
 /*Модальное окно поиска*/
 
 .search-modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+}
+
+.search-modal__wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #ffffff;
   width: 715px;
   outline: 2px solid red;
   padding: 54px 70px 70px;
+  z-index: 11;
+  border-radius: 30px;
 }
 
 .search-modal__form {
@@ -689,9 +703,28 @@ fieldset {
 }
 
 .search-modal__button-close {
+  position: relative;
   width: 53px;
   height: 53px;
+  border: none;
   border-radius: 50%;
+  padding: 0;
+}
+
+.search-modal__button-close::before,
+.search-modal__button-close::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.search-modal__button-close::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.search-modal__button-close::after {
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .search-modal__title {
