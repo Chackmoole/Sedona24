@@ -757,8 +757,12 @@ input[type='date']::-webkit-calendar-picker-indicator {
   grid-column: 1 / 2;
 }
 
-.search-modal__caption--children {
+.search-modal__caption-wrapper {
   grid-column: 4 / 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
 }
 
 .search-modal__inner {
@@ -780,6 +784,53 @@ input[type='date']::-webkit-calendar-picker-indicator {
 
 .search-modal__container--children {
   grid-column: 5 / -1;
+}
+
+.search-modal__tooltip-button {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  background-image: url('/img/svg/variant=info.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #83b3d3;
+  border: none;
+  border-radius: 50%;
+}
+
+.search-modal__tooltip-button::before {
+  display: none;
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 6px;
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  background-color: #333333;
+}
+
+.search-modal__tooltip-button::after {
+  display: none;
+  content: 'Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.';
+  position: absolute;
+  top: 40px;
+  left: -115px;
+  width: 256px;
+  height: 143px;
+  background-color: #333333;
+  border-radius: 10px;
+  padding: 16px 20px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.search-modal__tooltip-button:hover::before,
+.search-modal__tooltip-button:hover::after {
+  display: block;
 }
 
 .search-modal__input-box {
