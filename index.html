@@ -487,14 +487,17 @@
           <label class="search-modal__caption" for="check-in"
             >Дата заезда:</label
           >
-          <input
-            class="search-modal__input search-modal__input--date"
-            type="date"
-            name="check-in"
-            id="check-in"
-            min="2024-10-18"
-            required
-          />
+          <div class="search-modal__input-box">
+            <input
+              class="field search-modal__input search-modal__input--date"
+              type="date"
+              name="check-in"
+              id="check-in"
+              min="2024-10-18"
+              placeholder="Укажите дату"
+              required
+            />
+          </div>
           <div class="search-modal__inner">
             <span class="text search-modal__input-error">
               Мы не можем отправить вас в прошлое.
@@ -506,14 +509,16 @@
           <label class="search-modal__caption" for="check-out"
             >Дата выезда:</label
           >
-          <input
-            class="search-modal__input search-modal__input--date"
-            type="date"
-            name="check-out"
-            id="check-out"
-            min="2024-10-19"
-            required
-          />
+          <div class="search-modal__input-box">
+            <input
+              class="field search-modal__input search-modal__input--date"
+              type="date"
+              name="check-out"
+              id="check-out"
+              min="2024-10-19"
+              required
+            />
+          </div>
           <div class="search-modal__inner">
             <span class="text search-modal__input-error visually-hidden">
               Мы не можем отправить вас в прошлое.
@@ -531,7 +536,7 @@
               <span class="visually-hidden">Убавить взрослого</span>
             </button>
             <input
-              class="search-modal__input search-modal__input__count"
+              class="field search-modal__input search-modal__input__count"
               type="number"
               id="adults"
               name="adults"
@@ -572,7 +577,7 @@
               <span class="visually-hidden">Убавить ребенка</span>
             </button>
             <input
-              class="search-modal__input search-modal__input__count"
+              class="field search-modal__input search-modal__input__count"
               type="number"
               id="child"
               name="child"
