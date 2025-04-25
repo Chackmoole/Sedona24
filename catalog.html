@@ -68,7 +68,7 @@
         </nav>
         <ul class="user-block">
           <li class="user-block__item">
-            <a class="user-block__link user-block__link--search" href="#">
+            <a class="user-block__link" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg
                 width="19"
@@ -96,10 +96,9 @@
             </a>
           </li>
           <li class="user-block__item">
-            <a class="user-block__link user-block__link--favorite" href="#">
+            <a class="user-block__link" href="#">
               <span class="visually-hidden">Избранное</span>
               <svg
-                class="n11111111"
                 width="19"
                 height="17"
                 viewBox="0 0 19 17"
@@ -114,11 +113,7 @@
             </a>
           </li>
           <li class="user-block__item">
-            <a
-              class="button user-block__link user-block__link--buy-button"
-              href="#"
-              >Хочу сюда!</a
-            >
+            <a class="button user-block__link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </div>
@@ -128,7 +123,7 @@
       <section class="catalog-page__header">
         <h1 class="title catalog-page__title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
-          <li class="breadcrumbs__item breadcrumbs__item--home">
+          <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="index.html">
               <span class="visually-hidden">На главную страницу</span>
               <svg
@@ -151,7 +146,7 @@
               </svg>
             </a>
           </li>
-          <li class="breadcrumbs__item breadcrumbs__item--hotels">
+          <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="#"> Гостиницы </a>
           </li>
         </ul>
@@ -162,7 +157,7 @@
           method="get"
         >
           <h2 class="visually-hidden">Фильтры</h2>
-          <fieldset class="filter__inner filter__infrastructure">
+          <fieldset class="filter__inner">
             <legend class="filter__title">Инфраструктура:</legend>
 
             <ul class="filter__list">
@@ -201,7 +196,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="filter__inner filter__house-type">
+          <fieldset class="filter__inner">
             <legend class="filter__title">Тип жилья:</legend>
             <ul class="filter__list">
               <li class="filter__item">
@@ -248,14 +243,14 @@
               Стоимость, ₽:
             </legend>
             <ul class="filter__price-list">
-              <li class="filter__price-item filter__price-item--min">
+              <li class="filter__price-item-min">
                 <label
                   class="filter__price-label filter__price-label--minPrice"
                   for="minPrice"
                 >
                   <span class="visually-hidden">минимальная цена</span>
                   <input
-                    class="filter__price-input filter__min-price"
+                    class="filter__price-input"
                     type="number"
                     name="minPrice"
                     id="minPrice"
@@ -265,14 +260,14 @@
                   <span>от</span>
                 </label>
               </li>
-              <li class="filter__price-item filter__price-item--max">
+              <li class="filter__price-item-max">
                 <label
                   class="filter__price-label filter__price-label--maxPrice"
                   for="maxPrice"
                 >
                   <span class="visually-hidden">Максимальная цена</span>
                   <input
-                    class="filter__price-input filter__max-price"
+                    class="filter__price-input"
                     type="number"
                     name="maxPrice"
                     id="maxPrice"
@@ -285,7 +280,7 @@
               <li class="filter__control">
                 <div class="range">
                   <div class="range__bar" style="left: 0; width: 227px">
-                    <button class="range__toggle range__toggle--min">
+                    <button class="range__toggle">
                       <span class="visually-hidden"
                         >кнопка диапазона уменьшения цены</span
                       >
@@ -318,7 +313,7 @@
       </section>
 
       <section class="sorting">
-        <h2 class="title title--h2 sorting__title">
+        <h2 class="title sorting__title">
           Найдено гостиниц:<span class="hotels-count">38</span>
         </h2>
         <form
@@ -328,27 +323,17 @@
         >
           <label class="visually-hidden" for="sort">Сортировка по</label>
           <div class="select-wrapper">
-            <select class="select sorting__select" name="sort" id="sort">
-              <option class="sorting__option" value="minPrice">
-                Сначала дешевые
-              </option>
-              <option class="sorting__option" value="maxPrice">
-                Сначала дорогие
-              </option>
-              <option class="sorting__option" value="popular">
-                Популярные
-              </option>
-              <option class="sorting__option" value="minStars">
-                Сначала меньше звезд
-              </option>
-              <option class="sorting__option" value="maxStars">
-                Сначала больше звезд
-              </option>
+            <select class="select" name="sort" id="sort">
+              <option value="minPrice">Сначала дешевые</option>
+              <option value="maxPrice">Сначала дорогие</option>
+              <option value="popular">Популярные</option>
+              <option value="minStars">Сначала меньше звезд</option>
+              <option value="maxStars">Сначала больше звезд</option>
             </select>
           </div>
         </form>
         <ul class="sorting__list">
-          <li class="sorting__item">
+          <li>
             <a class="sorting__link sorting__link--active" href="#">
               <span class="visually-hidden"
                 >Показать маленькими карточками</span
@@ -368,7 +353,7 @@
               </svg>
             </a>
           </li>
-          <li class="sorting__item">
+          <li>
             <a class="sorting__link" href="#">
               <span class="visually-hidden">Показать большими карточками</span>
               <svg
@@ -382,7 +367,7 @@
               </svg>
             </a>
           </li>
-          <li class="sorting__item">
+          <li>
             <a class="sorting__link" href="#">
               <span class="visually-hidden">Показать списком</span>
               <svg
@@ -422,7 +407,7 @@
               <p class="card__text card__desc">Гостиница</p>
               <p class="card__text card__price">
                 От
-                <span class="card_cost">4000</span>
+                <span>4000</span>
                 ₽
               </p>
             </div>
@@ -434,15 +419,15 @@
             </div>
             <div class="card__rating-box">
               <div class="card__stars">
-                <span class="card__star card__star--color"></span>
-                <span class="card__star card__star--color"></span>
-                <span class="card__star card__star--color"></span>
-                <span class="card__star card__star--color"></span>
                 <span class="card__star"></span>
+                <span class="card__star"></span>
+                <span class="card__star"></span>
+                <span class="card__star"></span>
+                <span></span>
               </div>
               <div class="card__rating text">
                 <p class="card__rating-text">Рейтинг:</p>
-                <span class="card__rating-value">8,5</span>
+                <span>8,5</span>
               </div>
             </div>
           </li>
@@ -459,10 +444,10 @@
             </a>
             <h3 class="card__title">Desert Quail Inn</h3>
             <div class="card__inner">
-              <p class="card__text card__desc">Гостиница</p>
-              <p class="card__text card__price">
+              <p class="card__text">Гостиница</p>
+              <p class="card__text">
                 От
-                <span class="card_cost">3000</span>
+                <span>3000</span>
                 ₽
               </p>
             </div>
@@ -474,15 +459,15 @@
             </div>
             <div class="card__rating-box">
               <div class="card__stars">
-                <span class="card__star card__star--color"></span>
-                <span class="card__star card__star--color"></span>
-                <span class="card__star card__star--color"></span>
                 <span class="card__star"></span>
                 <span class="card__star"></span>
+                <span class="card__star"></span>
+                <span></span>
+                <span></span>
               </div>
               <div class="card__rating text">
                 <p class="card__rating-text">Рейтинг:</p>
-                <span class="card__rating-value">8,9</span>
+                <span>8,9</span>
               </div>
             </div>
           </li>
@@ -498,10 +483,10 @@
             </a>
             <h3 class="card__title">Villas at Poco Diablo</h3>
             <div class="card__inner">
-              <p class="card__text card__desc">Гостиница</p>
-              <p class="card__text card__price">
+              <p class="card__text">Гостиница</p>
+              <p class="card__text">
                 От
-                <span class="card_cost">2000</span>
+                <span>2000</span>
                 ₽
               </p>
             </div>
@@ -513,15 +498,15 @@
             </div>
             <div class="card__rating-box">
               <div class="card__stars">
-                <span class="card__star card__star--color"></span>
-                <span class="card__star card__star--color"></span>
                 <span class="card__star"></span>
                 <span class="card__star"></span>
-                <span class="card__star"></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
               <div class="card__rating text">
                 <p class="card__rating-text">Рейтинг:</p>
-                <span class="card__rating-value">9,2</span>
+                <span>9,2</span>
               </div>
             </div>
           </li>
@@ -537,10 +522,10 @@
             </a>
             <h3 class="card__title">GreenTree Inn</h3>
             <div class="card__inner">
-              <p class="card__text card__desc">Гостиница</p>
-              <p class="card__text card__price">
+              <p class="card__text">Гостиница</p>
+              <p class="card__text">
                 От
-                <span class="card_cost">3000</span>
+                <span>3000</span>
                 ₽
               </p>
             </div>
@@ -552,15 +537,15 @@
             </div>
             <div class="card__rating-box">
               <div class="card__stars">
-                <span class="card__star card__star--color"></span>
-                <span class="card__star card__star--color"></span>
                 <span class="card__star"></span>
                 <span class="card__star"></span>
-                <span class="card__star"></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
               <div class="card__rating text">
                 <p class="card__rating-text">Рейтинг:</p>
-                <span class="card__rating-value">9,2</span>
+                <span>9,2</span>
               </div>
             </div>
           </li>
@@ -572,7 +557,7 @@
         </div>
         <div class="cards__pagination-box">
           <ul class="pagination">
-            <li class="pagination__item">
+            <li>
               <a
                 class="button button--secondary pagination__link pagination__link--disable"
                 href="#"
@@ -580,29 +565,27 @@
                 >1</a
               >
             </li>
-            <li class="pagination__item">
+            <li>
               <a class="button button--secondary pagination__link" href="#"
                 >2</a
               >
             </li>
-            <li class="pagination__item">
+            <li>
               <a class="button button--secondary pagination__link" href="#"
                 >3</a
               >
             </li>
-            <li class="pagination__item">
+            <li>
               <a class="button button--secondary pagination__link" href="#"
                 >4</a
               >
             </li>
-            <li class="pagination__item">
-              <a
-                class="button button--secondary pagination__link pagination__link--more"
-                href="#"
+            <li>
+              <a class="button button--secondary pagination__link" href="#"
                 >...</a
               >
             </li>
-            <li class="pagination__item">
+            <li>
               <a class="button button--secondary pagination__link" href="#"
                 >10</a
               >
@@ -617,22 +600,22 @@
               name="page-count"
               id="page-count"
             >
-              <option class="cards__option" value="1">1</option>
-              <option class="cards__option" value="2">2</option>
-              <option class="cards__option" value="3">3</option>
-              <option class="cards__option" value="4" selected>4</option>
-              <option class="cards__option" value="5">5</option>
-              <option class="cards__option" value="6">6</option>
-              <option class="cards__option" value="7">7</option>
-              <option class="cards__option" value="8">8</option>
-              <option class="cards__option" value="9">9</option>
-              <option class="cards__option" value="10">10</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4" selected>4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
             </select>
           </div>
         </div>
       </section>
       <section class="mailing mailing--catalog">
-        <h2 class="title title--h2 mailing__title mailing__title--catalog">
+        <h2 class="title mailing__title mailing__title--catalog">
           Подпишитесь на рассылку
         </h2>
         <p class="caption mailing__caption">
@@ -665,11 +648,8 @@
     </main>
     <footer class="main-footer">
       <ul class="socials main-footer__socials">
-        <li class="socials__item socials__item--twitter">
-          <a
-            class="socials__link socials__link--twitter"
-            href="https://www.facebook.com/htmlacademy"
-          >
+        <li>
+          <a class="socials__link" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">ссылка на сайт twitter</span>
             <svg
               width="18"
@@ -691,11 +671,8 @@
             </svg>
           </a>
         </li>
-        <li class="socials__item socials__item--facebook">
-          <a
-            class="socials__link socials__link--facebook"
-            href="https://twitter.com/htmlacademy_ru"
-          >
+        <li>
+          <a class="socials__link" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">ссылка на сайт facebook</span>
             <svg
               width="10"
@@ -717,9 +694,9 @@
             </svg>
           </a>
         </li>
-        <li class="socials__item socials__item--youtube">
+        <li>
           <a
-            class="socials__link socials__link--youtube"
+            class="socials__link"
             href="https://www.youtube.com/c/HTMLAcademyRUS"
           >
             <span class="visually-hidden">ссылка на сайт youtube</span>

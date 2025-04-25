@@ -66,7 +66,7 @@
         </nav>
         <ul class="user-block">
           <li class="user-block__item">
-            <a class="user-block__link user-block__link--search" href="#">
+            <a href="#">
               <span class="visually-hidden">Поиск</span>
               <svg
                 width="19"
@@ -94,10 +94,9 @@
             </a>
           </li>
           <li class="user-block__item">
-            <a class="user-block__link user-block__link--favorite" href="#">
+            <a href="#">
               <span class="visually-hidden">Избранное</span>
               <svg
-                class="n11111111"
                 width="19"
                 height="17"
                 viewBox="0 0 19 17"
@@ -112,11 +111,7 @@
             </a>
           </li>
           <li class="user-block__item">
-            <a
-              class="button user-block__link user-block__link--buy-button"
-              href="#"
-              >Хочу сюда!</a
-            >
+            <a class="button user-block__link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </div>
@@ -322,18 +317,18 @@
       </section>
 
       <section class="accept">
-        <h2 class="title title--h2 accept__title">Заинтересовались?</h2>
+        <h2 class="title accept__title">Заинтересовались?</h2>
         <p class="caption accept__caption">
           Укажите предполагаемые даты поездки, <br />
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="button button--large accept__button" type="button">
+        <button class="button button--large" type="button">
           Поиск гостиницы в седоне
         </button>
       </section>
 
       <section class="mailing mailing--main-page">
-        <h2 class="title title--h2 mailing__title">Подпишитесь на рассылку</h2>
+        <h2 class="title mailing__title">Подпишитесь на рассылку</h2>
         <p class="caption mailing__caption">
           Только полезная информация и&nbsp;никакого спама, <br />
           честное бойскаутское!
@@ -365,11 +360,8 @@
 
     <footer class="main-footer main-footer--main-page">
       <ul class="socials main-footer__socials">
-        <li class="socials__item socials__item--twitter">
-          <a
-            class="socials__link socials__link--twitter"
-            href="https://www.facebook.com/htmlacademy"
-          >
+        <li>
+          <a class="socials__link" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">ссылка на сайт twitter</span>
             <svg
               width="18"
@@ -391,11 +383,8 @@
             </svg>
           </a>
         </li>
-        <li class="socials__item socials__item--facebook">
-          <a
-            class="socials__link socials__link--facebook"
-            href="https://twitter.com/htmlacademy_ru"
-          >
+        <li>
+          <a class="socials__link" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">ссылка на сайт facebook</span>
             <svg
               width="10"
@@ -417,9 +406,9 @@
             </svg>
           </a>
         </li>
-        <li class="socials__item socials__item--youtube">
+        <li>
           <a
-            class="socials__link socials__link--youtube"
+            class="socials__link"
             href="https://www.youtube.com/c/HTMLAcademyRUS"
           >
             <span class="visually-hidden">ссылка на сайт youtube</span>
@@ -489,12 +478,11 @@
           >
           <div class="search-modal__input-box">
             <input
-              class="field search-modal__input search-modal__input--date"
+              class="field search-modal__input"
               type="date"
               name="check-in"
               id="check-in"
               min="2024-10-18"
-              placeholder="Укажите дату"
               required
             />
           </div>
@@ -512,7 +500,7 @@
           >
           <div class="search-modal__input-box">
             <input
-              class="field search-modal__input search-modal__input--date"
+              class="field search-modal__input"
               type="date"
               name="check-out"
               id="check-out"
@@ -532,7 +520,7 @@
           <label class="search-modal__caption" for="adults">Взрослые:</label>
           <div class="search-modal__container">
             <button
-              class="search-modal__button search-modal__button--count search-modal__button--adults-dec"
+              class="search-modal__button search-modal__button--adults-dec"
               type="button"
             >
               <span class="visually-hidden">Убавить взрослого</span>
@@ -547,7 +535,7 @@
               required
             />
             <button
-              class="search-modal__button search-modal__button--count search-modal__button--adults-inc"
+              class="search-modal__button search-modal__button--adults-inc"
               type="button"
             >
               <span class="visually-hidden">Прибавить взрослого</span>
@@ -563,7 +551,7 @@
             class="search-modal__container search-modal__container--children"
           >
             <button
-              class="search-modal__button search-modal__button--count search-modal__button--child-dec"
+              class="search-modal__button search-modal__button--child-dec"
               type="button"
             >
               <span class="visually-hidden">Убавить ребенка</span>
@@ -578,7 +566,7 @@
               required
             />
             <button
-              class="search-modal__button search-modal__button--count search-modal__button--child-inc"
+              class="search-modal__button search-modal__button--child-inc"
               type="button"
             >
               <span class="visually-hidden">Прибавить ребенка</span>

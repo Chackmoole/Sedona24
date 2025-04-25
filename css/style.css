@@ -360,7 +360,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   transition-timing-function: ease-in-out;
 }
 
-.user-block__link--buy-button {
+.user-block__link {
   text-decoration: none;
 }
 
@@ -671,6 +671,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
 /*Модальное окно поиска*/
 
 .search-modal {
+  display: none;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -878,7 +879,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   color: #ff5757;
 }
 
-.search-modal__button--count {
+.search-modal__button {
   width: 25px;
   height: 25px;
   border: none;
@@ -1103,11 +1104,11 @@ input[type='date']::-webkit-calendar-picker-indicator {
   grid-template-areas: 'minPrice maxPrice' 'control control';
 }
 
-.filter__price-item--min {
+.filter__price-item-min {
   grid-area: minPrice;
 }
 
-.filter__price-item--max {
+.filter__price-item-max {
   grid-area: maxPrice;
 }
 
@@ -1393,7 +1394,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   gap: 7px;
 }
 
-.card__star--color {
+.card__star {
   display: block;
   background-image: url('/img/svg/Star.svg');
   width: 18px;
