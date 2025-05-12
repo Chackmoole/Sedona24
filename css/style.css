@@ -977,6 +977,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
 .catalog-page__header {
   display: flex;
   flex-direction: column;
+  background-color: #333333;
   background-image: url('../img/background/catalog-background 1.png');
   background-repeat: no-repeat;
   padding: 40px 72px 83px;
@@ -1413,6 +1414,8 @@ input[type='date']::-webkit-calendar-picker-indicator {
 .card__star {
   display: block;
   background-image: url('/img/svg/star.svg');
+  background-repeat: no-repeat;
+  background-position: center;
   width: 18px;
   height: 17px;
 }
