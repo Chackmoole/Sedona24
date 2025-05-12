@@ -352,8 +352,8 @@ input[type='date']::-webkit-calendar-picker-indicator {
   align-items: center;
   width: 19px;
   height: 19px;
-  top: -9px;
-  right: -1px;
+  top: 0;
+  right: 0;
   font-size: 10px;
   color: #ffffff;
   background-color: #7db550;
@@ -364,6 +364,14 @@ input[type='date']::-webkit-calendar-picker-indicator {
 }
 
 .user-block__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.user-block__button {
   text-decoration: none;
 }
 
