@@ -970,6 +970,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   display: flex;
   flex-direction: column;
   background-image: url('../img/background/catalog-background 1.png');
+  background-repeat: no-repeat;
   padding: 40px 72px 83px;
   color: #ffffff;
 }
@@ -1042,7 +1043,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
 .filter__list {
   display: grid;
   gap: 16px;
-  justify-content: start;
+  justify-content: center;
 }
 
 .filter__item {
@@ -1308,6 +1309,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
 }
 
 .card {
+  width: 340px;
   padding: 20px;
 }
 
@@ -1367,6 +1369,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
 }
 
 .card__button {
+  max-width: 140px;
   font-size: 16px;
   padding: 8px 20px;
 }
@@ -1381,6 +1384,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
 
 .card__button--favourite {
   background-color: #7db54f;
+  max-width: 144px;
 }
 
 .card__rating-box {
