@@ -793,7 +793,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   width: 25px;
   height: 25px;
   padding: 0;
-  background-image: url('/img/svg/variant=info.svg');
+  background-image: url('/img/svg/variant-info.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-color: #83b3d3;
@@ -841,7 +841,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
 }
 
 .search-modal__input-box::after {
-  content: url('/img/svg/variant=date.svg');
+  content: url('/img/svg/variant-date.svg');
   position: absolute;
   width: 20px;
   height: 20px;
@@ -1065,13 +1065,13 @@ input[type='date']::-webkit-calendar-picker-indicator {
 }
 
 .filter__item input[type='checkbox']:checked + .filter__checkbox {
-  background-image: url('/img/svg/control=checkbox.svg');
+  background-image: url('/img/svg/control-checkbox.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .filter__item input[type='radio']:checked + .filter__checkbox {
-  background-image: url('/img/svg/control=radio.svg');
+  background-image: url('/img/svg/control-radio.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
