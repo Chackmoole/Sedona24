@@ -1401,7 +1401,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
 
 .card__star {
   display: block;
-  background-image: url('/img/svg/Star.svg');
+  background-image: url('/img/svg/star.svg');
   width: 18px;
   height: 17px;
 }
