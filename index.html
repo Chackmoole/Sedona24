@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Sedona</title>
+    <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -14,7 +15,10 @@
             height="70"
             viewBox="0 0 139 70"
             xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Седона"
           >
+            >
             <path
               d="M139 0H0l59.93 65.65a12.7 12.7 0 0 0 19.14 0L139 0Z"
               fill="#81B3D3"
@@ -52,9 +56,7 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active" href="#"
-                >Главная</a
-              >
+              <a class="main-nav__link main-nav__link--active">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">О Седоне</a>
@@ -66,7 +68,7 @@
         </nav>
         <ul class="user-block">
           <li class="user-block__item">
-            <a class="user-block__link user-block__link--search" href="#">
+            <a class="user-block__link" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg
                 width="19"
@@ -94,10 +96,9 @@
             </a>
           </li>
           <li class="user-block__item">
-            <a class="user-block__link user-block__link--favorite" href="#">
+            <a class="user-block__link" href="#">
               <span class="visually-hidden">Избранное</span>
               <svg
-                class="n11111111"
                 width="19"
                 height="17"
                 viewBox="0 0 19 17"
@@ -112,23 +113,21 @@
             </a>
           </li>
           <li class="user-block__item">
-            <a
-              class="button user-block__link user-block__link--buy-button"
-              href="#"
-              >Хочу сюда!</a
-            >
+            <a class="button user-block__button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </div>
     </header>
 
-    <main class="main-page page-wrapper">
+    <main class="main-page">
       <div class="main-page__container">
         <svg
           width="458"
           height="352"
           viewBox="0 0 458 352"
           xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Седона"
         >
           <path
             d="m152.3 56.1-2.8 4.9h-2.7l-.9 1.4h2.8l-6.1 10.4c-1.3 2.2-.4 4.2 2.1 4.2 1.8 0 3.7-1.3 5.6-3.1 0 3.8 5.3 4.5 8.6.5h.7c1.8 0 4.6-1.1 6.2-2.9-.2-.4-.7-.9-1.1-1l-.2.2c-1.4 1.5-3 2.2-4.6 2.2l2.8-4.8c1.8-3.1.1-6.1-2.7-6.1-2.3 0-4.1.9-5.9 3.9l-1.5 2.6-1.2 2.1-.2.2c-2.2 2.5-4.3 4.5-5.6 4.5-.7 0-1-.5-.3-1.6l6.5-11.2h2.5l.7-1.5h-2.5l2.8-4.9h-3Zm7.5 7.8c1 .1 1.4 1.3.4 3l-2.2 3.7h-.1c-1 0-1.8.8-1.8 1.8 0 .4.1.7.3 1v.1c-1.4 2.4-4.9 2-3.1-1.1l2.3-3.9 1.5-2.4c.9-1.6 2-2.2 2.7-2.2Zm22-7.8L179 61h-2.7l-.9 1.4h2.8L172 72.8c-1.3 2.2-.4 4.2 2.1 4.2 1.2 0 2.5-.6 3.9-1.6l-.8 1.3h3l4.6-7.9c4.6-5.8 6.7-5 5.4-2.8l-3.9 6.7c-1.3 2.2-.4 4.2 2.1 4.2 1.8 0 3.8-1.4 5.7-3.2.1 1.9 1.7 3.2 4.1 3.2 3.4 0 6.8-2.6 9.3-5.5-.2-.4-.7-.9-1.1-1l-.2.2c-2.2 2.5-5 4.5-7.1 4.5-1.9 0-3-1.1-1.6-3.6l.3-.5c1.9.8 5.6.4 7.9-3.4l.4-.7c1.6-2.8.1-4.8-2.4-4.8-2.4 0-4.4 1.3-5.7 3.4l-2.9 5-.2.2c-2.2 2.5-4.3 4.5-5.6 4.5-.7 0-1-.5-.4-1.6l4.4-7.5c1.3-2.3.1-3.9-1.6-3.9-1.3 0-2.7.7-4.2 2.3l4.8-8.3h-3l-8.4 14.4-.2.2c-2.2 2.5-4.3 4.5-5.6 4.5-.7 0-1-.5-.3-1.6l6.5-11.2h2.5l.9-1.4h-2.5l2.8-4.9-3.2-.1Zm21.3 8.2c1-.1 1.5.9.5 2.6l-.4.7c-1.4 2.4-3.4 2.4-4.5 2l1.9-3.4c.7-1.2 1.7-1.8 2.5-1.9Zm44.3-5.4c-1.7 1.5-1.9 3.2-.8 4.6l.3.3c-1.3 1.9-3.1 4.4-5.1 6.7l-.2.2c-1.4 1.5-3 2.2-4.6 2.2l2.8-4.8c1.8-3.1.1-6.1-2.7-6.1-2.3 0-4.1.9-5.9 3.9l-1.5 2.6-1.2 2.1-.2.2c-2.5 2.8-4.6 4.7-7 5.7l6.8-11.4h-1.8c0-1.2-1.3-2.9-3.2-2.9-1.6 0-3.9 1.3-5.2 3.4l-4.2 7.2c-1.3 2.2-.4 4.2 2.1 4.2.8 0 1.9-.4 2.9-1l-.8 1.4c-4.1 1.2-6.6 2.9-6.6 5.1 0 2.9 4.4 3.5 6.6-.2l2.3-3.9c2.4-.7 4.8-2.1 7.2-4.5 0 3.8 5.3 4.6 8.6.5h.7c1.8 0 4.6-1.1 6.2-2.9 1.4-1.7 2.6-3.2 5-6.4l.4.5c.4.5.5 1.1.2 1.7l-3.2 5.5c-1.3 2.2-.4 4.2 2.1 4.2 1.5 0 3.2-1 4.8-2.4-.1 1.4.9 2.4 2.6 2.4.8 0 1.9-.4 2.9-1l-.8 1.4c-4.1 1.2-6.6 2.9-6.6 5.1 0 2.9 4.4 3.5 6.6-.2l2.3-3.9c2.5-.8 4.9-2.2 7.4-4.6.1 1.9 1.7 3.2 4.1 3.2 2.5 0 4.9-1.4 7-3.2-.1 3.9 5.3 4.7 8.6.6h.7c.9 0 2.2-.3 3.4-.9-.8 2.1-.1 3.5 1.7 3.5 1.7 0 3.5-1.5 5-2.9-.3 1.6.7 2.9 2.6 2.9 2.5 0 5.4-2.6 7.9-5.5 1.7-2 3.2-4 4.3-5.4-1.2 3.1-.6 8.7-3.4 8.7-1 0-1.4-1.1-1.4-1.1l-1.9 1s.6 2.4 3.3 2.4c.3 0 .6 0 .8-.1h.1c3.1-.4 6.1-2.8 8.4-5.4-.2-.5-.7-.9-1.1-1l-.2.2c-1.1 1.2-2.3 2.3-3.6 3.2 1-2.8.8-7.2 2.6-11l-2.3-1.2c-1.2 1.7-4 5.6-6.7 8.7l-.2.2c-2.2 2.5-4.3 4.5-5.6 4.5-.7 0-1-.5-.3-1.6l6.4-11.2h-3l-5.4 9.3c-2.3 2.1-4.1 3.2-4.6 3-.8-.3 0-1.4.4-2.1l5.9-10.2h-3l-4.7 8.1-.2.2c-1.4 1.5-3 2.2-4.6 2.2l2.8-4.8c1.8-3.1.1-6.1-2.7-6.1-2.3 0-4.1.9-5.9 3.9l-1.5 2.6-1.2 2.1-.2.2c-2.2 2.5-5 4.5-7.1 4.5-1.9 0-3-1.1-1.6-3.6l.3-.5c1.9.8 5.6.4 7.9-3.4l.4-.7c1.6-2.8.1-4.8-2.4-4.8-2.4 0-4.4 1.3-5.7 3.4l-2.9 5-.2.2c-2.5 2.8-4.6 4.7-7 5.7l6.8-11.4h-1.8c0-1.2-1.3-2.9-3.2-2.9-1.6 0-3.9 1.3-5.2 3.4l-2.9 4.9-.2.2c-2.2 2.5-4.3 4.5-5.6 4.5-.7 0-1-.5-.3-1.6l3-5.2c1-1.8.6-2.9-.4-4l-1.7-2c-.4-.5-.4-1.1.2-1.7l-1.9-1.9Zm-10.3 5c1 .1 1.5 1.3.4 3l-2.2 3.7h-.1c-1 0-1.8.8-1.8 1.8 0 .4.1.7.3 1v.1c-1.4 2.4-4.9 2-3.1-1.1l2.3-3.9 1.5-2.4c.9-1.6 1.9-2.2 2.7-2.2Zm50.2 0c1 .1 1.5 1.3.4 3l-2.2 3.7h-.1c-1 0-1.8.8-1.8 1.8 0 .4.1.7.3 1v.1c-1.4 2.4-4.9 2-3.1-1.1l2.3-3.9 1.5-2.4c.8-1.6 1.9-2.2 2.7-2.2Zm-11.7.4c1-.1 1.5.9.5 2.6l-.4.7c-1.5 2.4-3.4 2.4-4.5 2l1.9-3.4c.7-1.2 1.7-1.8 2.5-1.9Zm-52.4.2c1 0 1.7.9.8 2.4l-2.3 4c-1.8 2.9-3.7 4.3-4.9 4.3-.7 0-1-.5-.3-1.6l4.2-7.3c.7-1.2 1.7-1.8 2.5-1.8Zm38.9 0c1 0 1.7.9.8 2.4l-2.3 4c-1.8 2.9-3.7 4.3-4.9 4.3-.7 0-1-.5-.3-1.6l4.2-7.3c.7-1.2 1.7-1.8 2.5-1.8Zm-45.3 14.9-1.4 2.4c-.6 1.1-1.7.9-1.7.1 0-.7.8-1.6 3.1-2.5Zm38.9 0-1.4 2.4c-.6 1.1-1.7.9-1.7.1.1-.7.8-1.6 3.1-2.5ZM101 67.8h28.9v1.9H101v-1.9Zm227.1 0H357v1.9h-28.9v-1.9Z"
@@ -170,7 +169,7 @@
               </p>
             </div>
             <img
-              src="img/content/photo-1.jpg"
+              src="img/content/indexPhoto-1.jpg"
               alt="изображение города Седона."
               width="800"
               height="384"
@@ -275,7 +274,7 @@
           <li class="advantages__item advantages__item--colored">
             <img
               class="advantages__img"
-              src="img/content/photo-2.jpg"
+              src="img/content/indexPhoto-2.jpg"
               alt="изображение каньона Седона."
               width="800"
               height="384"
@@ -322,18 +321,18 @@
       </section>
 
       <section class="accept">
-        <h2 class="title title--h2 accept__title">Заинтересовались?</h2>
+        <h2 class="title accept__title">Заинтересовались?</h2>
         <p class="caption accept__caption">
           Укажите предполагаемые даты поездки, <br />
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="button button--large accept__button" type="button">
+        <button class="button button--large" type="button">
           Поиск гостиницы в седоне
         </button>
       </section>
 
       <section class="mailing mailing--main-page">
-        <h2 class="title title--h2 mailing__title">Подпишитесь на рассылку</h2>
+        <h2 class="title mailing__title">Подпишитесь на рассылку</h2>
         <p class="caption mailing__caption">
           Только полезная информация и&nbsp;никакого спама, <br />
           честное бойскаутское!
@@ -346,7 +345,7 @@
         >
           <label>
             <input
-              class="input mailing__input"
+              class="field mailing__input"
               type="text"
               name="mailing__input"
               placeholder="Ваш e-mail"
@@ -363,13 +362,10 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--main-page">
       <ul class="socials main-footer__socials">
-        <li class="socials__item socials__item--twitter">
-          <a
-            class="socials__link socials__link--twitter"
-            href="https://www.facebook.com/htmlacademy"
-          >
+        <li>
+          <a class="socials__link" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">ссылка на сайт twitter</span>
             <svg
               width="18"
@@ -391,11 +387,8 @@
             </svg>
           </a>
         </li>
-        <li class="socials__item socials__item--facebook">
-          <a
-            class="socials__link socials__link--facebook"
-            href="https://twitter.com/htmlacademy_ru"
-          >
+        <li>
+          <a class="socials__link" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">ссылка на сайт facebook</span>
             <svg
               width="10"
@@ -417,9 +410,9 @@
             </svg>
           </a>
         </li>
-        <li class="socials__item socials__item--youtube">
+        <li>
           <a
-            class="socials__link socials__link--youtube"
+            class="socials__link"
             href="https://www.youtube.com/c/HTMLAcademyRUS"
           >
             <span class="visually-hidden">ссылка на сайт youtube</span>
@@ -468,127 +461,127 @@
     </footer>
 
     <article class="search-modal">
-      <div class="search-modal__box">
-        <h2 class="title title--h2 search-modal__title">
-          Поиск гостиницы в Седоне
-        </h2>
-        <button class="button search-modal__button-close">
-          <span class="visually-hidden">Закрыть окно бронирования</span>
-        </button>
-      </div>
+      <div class="search-modal__wrapper">
+        <div class="search-modal__box">
+          <h2 class="title search-modal__title">Поиск гостиницы в Седоне</h2>
+          <button class="search-modal__button-close" type="button">
+            <span class="visually-hidden">Закрыть окно бронирования</span>
+          </button>
+        </div>
 
-      <form
-        class="search-modal__form"
-        action="https://echo.htmlacademy.ru/"
-        method="get"
-        name="hotel-search"
-      >
-        <label class="search-modal__caption" for="check-in">Дата заезда:</label>
-        <input
-          class="search-modal__input search-modal__input--date"
-          type="date"
-          name="check-in"
-          id="check-in"
-          min="2024-10-18"
-          required
-        />
-        <div class="search-modal__inner">
-          <span class="text search-modal__input-error">
-            Мы не можем отправить вас в прошлое.
-          </span>
-          <span class="text visually-hidden">
-            На эти даты есть свободные номера. Пока есть.
-          </span>
-        </div>
-        <label class="search-modal__caption" for="check-out"
-          >Дата выезда:</label
+        <form
+          class="search-modal__form"
+          action="https://echo.htmlacademy.ru/"
+          method="get"
+          name="hotel-search"
         >
-        <input
-          class="search-modal__input search-modal__input--date"
-          type="date"
-          name="check-out"
-          id="check-out"
-          min="2024-10-19"
-          required
-        />
-        <div class="search-modal__inner">
-          <span class="text search-modal__input-error visually-hidden">
-            Мы не можем отправить вас в прошлое.
-          </span>
-          <span class="text">
-            На эти даты есть свободные номера. Пока есть.
-          </span>
-        </div>
-        <label class="search-modal__caption" for="adults">Взрослые:</label>
-        <div class="search-modal__container">
-          <button
-            class="search-modal__button search-modal__button--count search-modal__button--adults-dec"
-            type="button"
+          <label class="search-modal__caption" for="check-in"
+            >Дата заезда:</label
           >
-            <span class="visually-hidden">Убавить взрослого</span>
-          </button>
-          <input
-            class="search-modal__input search-modal__input__count"
-            type="number"
-            id="adults"
-            name="adults"
-            min="1"
-            value="2"
-            required
-          />
-          <button
-            class="search-modal__button search-modal__button--count search-modal__button--adults-inc"
-            type="button"
+          <div class="search-modal__input-box">
+            <input
+              class="field search-modal__input"
+              type="date"
+              name="check-in"
+              id="check-in"
+              min="2024-10-18"
+              required
+            />
+          </div>
+          <div class="search-modal__inner">
+            <span class="text search-modal__input-error">
+              Мы не можем отправить вас в прошлое.
+            </span>
+            <span class="text visually-hidden">
+              На эти даты есть свободные номера. Пока есть.
+            </span>
+          </div>
+
+          <label class="search-modal__caption" for="check-out"
+            >Дата выезда:</label
           >
-            <span class="visually-hidden">Прибавить взрослого</span>
-          </button>
-        </div>
-        <label
-          class="search-modal__caption search-modal__caption--children"
-          for="child"
-          >Дети:</label
-        >
-        <div class="search-modal__container search-modal__container--children">
-          <button
-            class="search-modal__tooltip-button visually-hidden"
-            type="button"
+          <div class="search-modal__input-box">
+            <input
+              class="field search-modal__input"
+              type="date"
+              name="check-out"
+              id="check-out"
+              min="2024-10-19"
+              required
+            />
+          </div>
+          <div class="search-modal__inner">
+            <span class="text search-modal__input-error visually-hidden">
+              Мы не можем отправить вас в прошлое.
+            </span>
+            <span class="text">
+              На эти даты есть свободные номера. Пока есть.
+            </span>
+          </div>
+
+          <label class="search-modal__caption" for="adults">Взрослые:</label>
+          <div class="search-modal__container">
+            <button
+              class="search-modal__button search-modal__button--adults-dec"
+              type="button"
+            >
+              <span class="visually-hidden">Убавить взрослого</span>
+            </button>
+            <input
+              class="field search-modal__input search-modal__input__count"
+              type="number"
+              id="adults"
+              name="adults"
+              min="1"
+              value="2"
+              required
+            />
+            <button
+              class="search-modal__button search-modal__button--adults-inc"
+              type="button"
+            >
+              <span class="visually-hidden">Прибавить взрослого</span>
+            </button>
+          </div>
+
+          <div class="search-modal__caption-wrapper">
+            <label for="child">Дети: </label>
+            <button class="search-modal__tooltip-button" type="button"></button>
+          </div>
+
+          <div
+            class="search-modal__container search-modal__container--children"
           >
-            i
-          </button>
-          <p class="search-modal__tooltip-text visually-hidden">
-            Укажите количество детей, которые будут с&nbsp;вами, возраст которых
-            от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет
-            размещаются бесплатно.
-          </p>
+            <button
+              class="search-modal__button search-modal__button--child-dec"
+              type="button"
+            >
+              <span class="visually-hidden">Убавить ребенка</span>
+            </button>
+            <input
+              class="field search-modal__input search-modal__input__count"
+              type="number"
+              id="child"
+              name="child"
+              min="0"
+              value="1"
+              required
+            />
+            <button
+              class="search-modal__button search-modal__button--child-inc"
+              type="button"
+            >
+              <span class="visually-hidden">Прибавить ребенка</span>
+            </button>
+          </div>
           <button
-            class="search-modal__button search-modal__button--count search-modal__button--child-dec"
-            type="button"
+            class="button button--secondary search-modal__button-accept"
+            type="submit"
           >
-            <span class="visually-hidden">Убавить ребенка</span>
+            Найти
           </button>
-          <input
-            class="search-modal__input search-modal__input__count"
-            type="number"
-            id="child"
-            name="child"
-            min="0"
-            value="1"
-            required
-          />
-          <button
-            class="search-modal__button search-modal__button--count search-modal__button--child-inc"
-            type="button"
-          >
-            <span class="visually-hidden">Прибавить ребенка</span>
-          </button>
-        </div>
-        <button
-          class="button button__secondary search-modal__button-accept"
-          type="submit"
-        >
-          Найти
-        </button>
-      </form>
+        </form>
+      </div>
     </article>
   </body>
 </html>
